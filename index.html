@@ -47,7 +47,7 @@
             </div>
           </div>
 
-          <div id="buttons-keyboards">
+          <div id="buttons-keyboards" class="d-inline-flex my-1 mx-1">
             <div class='d-inline-flex my-1 mx-1'>
               <div class="button" id="div-khmer-angkor-keyboard">
                 <button id="btn-khmer-angkor" class="btn btn-sm bg-light" data-toggle="button" type="button">
@@ -190,6 +190,57 @@
             </p>
             <p>&copy; 2023 Makara Sok, Marc Durdin</p>
             <p><a id='about-help-link' target='_blank' href="https://www.unicode.org/L2/L2022/22290-khmer-encoding.pdf">More information on Khmer Encoding Structure</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='modal' id='help-modal' tabindex='-1'>
+      <div class='modal-dialog'>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Help using this Khmer Encoding Structure Website</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+            This website demonstrates the improved Khmer encoding structure,
+            using the Khmer Angkor keyboard and Khmer Busra Test font.
+            </p>
+            <p>
+            To get started, you will probably want to work with the examples
+            provided. Each example provides keying sequences based on a US
+            English keyboard layout, that you can use to see how the Khmer
+            Angkor keyboard + Khmer Busra font work together to resolve.
+            </p>
+            <p>
+            Each of the provided examples has a "correct" keying order for the
+            Khmer NIDA keyboard, shown in the example area at the top of the
+            page. On mobile devices, incorrect keying orders are shown in tabs
+            for space reasons. The correct keying order is shown in green, and
+            incorrect keying orders are shown in red.
+            </p>
+            <p>
+            Try typing the correct and incorrect keying orders, and observe how
+            the Khmer Angkor keyboard corrects the output character order and
+            character choice automatically as you type, preventing invalid
+            syllable combinations.
+            </p>
+            <p>
+            You can also try typing the same sequences with the Khmer NIDA
+            keyboard or another Khmer keyboard on your device, and watch how
+            the Khmer Busra font highlights the incorrect sequences with
+            dotted circles.
+            </p>
+            <p>
+            Finally, this is a beta release of the keyboard and font, so there
+            may still be a few edge cases. Please report these at
+            https://github.com/mcdurdin/khmer-syllable-example/issues so that
+            we can address them.
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>

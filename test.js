@@ -26,11 +26,7 @@ function enableControls(enable) {
 }
 
 function focusTextArea() {
-  // if(keyman) {
-    // keyman.moveToElement('ta1');
-  // } else {
-    ta1.focus();
-  // }
+  ta1.focus();
 }
 
 let keymanInitialized = false;
@@ -43,8 +39,7 @@ if(!isTouchDevice()) {
 keyman.init({
   ui:'button',
   resources:'/resource/',
-  // keyboards:'/data/keyboard/',
-  // fonts:'/data/font/',
+  keyboards:'/keyboards/',
   attachType:'manual',
   setActiveOnRegister:false
 }).then(function() {

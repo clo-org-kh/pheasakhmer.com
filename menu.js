@@ -7,6 +7,9 @@ menuDropdown.onclick = (value) => {
   } else if(value == '#about') {
     let aboutModal = new bootstrap.Modal(document.getElementById('about-modal'));
     aboutModal.show();
+  } else if(value == '#help') {
+    let helpModal = new bootstrap.Modal(document.getElementById('help-modal'));
+    helpModal.show();
   } else if(value.startsWith('#font-')) {
     selectFont(value.substring('#font-'.length));
     focusTextArea();
@@ -20,6 +23,7 @@ function fillDropdownMenu() {
   menuDropdown.addDivider();
   addFontsToMenu();
   menuDropdown.addDivider();
+  menuDropdown.add('#help', 'Help using this website');
   menuDropdown.add('#about', 'About this website');
 }
 

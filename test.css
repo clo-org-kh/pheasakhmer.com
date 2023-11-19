@@ -372,10 +372,14 @@ __disabled__ #toast-container {
   transition: background 0.5s ease-in-out;
 }
 
+#examples .card-header {
+  display: none;
+}
+
 /* Examples */
 
 #dropdown-menu-keyboards {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 767px) {
@@ -388,11 +392,11 @@ __disabled__ #toast-container {
   }
 
   #dropdown-menu-keyboards {
-    display: block;
+    display: inline-flex !important;
   }
 
   #buttons-keyboards {
-    display: none;
+    display: none !important;
   }
 
   #examples-body .row {
@@ -402,6 +406,11 @@ __disabled__ #toast-container {
   #examples-body .row.active {
     display: block;
   }
+
+  #examples .card-header {
+    display: block;
+  }
+
 }
 
 #examples .correct kbd {
@@ -414,4 +423,9 @@ __disabled__ #toast-container {
 
 .example-text {
   font-family: "Khmer Mondulkiri";
+}
+
+#help-modal .modal-body {
+  max-height: 600px;
+  overflow: scroll;
 }
