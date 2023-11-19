@@ -1,0 +1,35 @@
+/*
+  Defines the custom and standard fonts that we are including on this page to
+  demonstrate rendering differences
+*/
+
+@font-face {
+  font-family: 'khmer_busra_test';
+  src: url(BusraTestB-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Khmer Mondulkiri';
+  src: url(Mondulkiri-R.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Khmer';
+  src: url(NotoSansKhmer-Regular.ttf);
+}
+
+html #ta1.font-system {
+  font-family: sans-serif !important;
+}
+
+html #ta1.font-khmer-mondulkiri {
+  font-family: "Khmer Mondulkiri" !important;
+}
+
+html #ta1.font-khmer-busra-test {
+  font-family: "khmer_busra_test" !important;
+}
+
+html #ta1.font-noto-sans-khmer {
+  font-family: "Noto Sans Khmer" !important;
+}

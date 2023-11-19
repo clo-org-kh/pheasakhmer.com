@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+
+    <!-- Set the viewport width to match iOS device widths -->
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>ភាសាខ្មែរ.com -- Khmer Encoding Structure</title>
+
+    <script src="resource/keymanweb.js"></script>
+
+    <link rel="icon" href="favicon.ico" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap-icons.css" rel="stylesheet" />
+    <link href='test.css' type="text/css" rel="stylesheet" />
+    <link href='fonts.css' type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <header class='navbar navbar-dark bg-dark text-white'>
+      <div class='container-fluid'>
+        <div class='xzrow'>
+          <div class='d-inline-flex my-1 mx-1'>
+            <div class="dropdown" id="dropdown-menu">
+              <button id="btn-menu" class="btn btn-sm bg-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg focusable="false" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btn-menu">
+                <!-- filled by menu.js -->
+              </ul>
+            </div>
+          </div>
+
+          <div class='d-inline-flex my-1 mx-1' id="dropdown-menu-keyboards">
+            <div class="dropdown" id="dropdown-keyboards">
+              <button id="btn-keyboards" class="btn btn-sm bg-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="bi-keyboard"></span>
+                <span id="selected-keyboard">Khmer Angkor</span>
+                <span class="bi-caret-down-fill"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btn-keyboards">
+                <!-- filled by keyboards.js -->
+              </ul>
+            </div>
+          </div>
+
+          <div id="buttons-keyboards">
+            <div class='d-inline-flex my-1 mx-1'>
+              <div class="button" id="div-khmer-angkor-keyboard">
+                <button id="btn-khmer-angkor" class="btn btn-sm bg-light" data-toggle="button" type="button">
+                  Khmer Angkor
+                </button>
+              </div>
+            </div>
+
+            <div class='d-inline-flex my-1 mx-1'>
+              <div class="button" id="div-khmer-nida-keyboard">
+                <button id="btn-khmer-nida" class="btn btn-sm bg-light" data-toggle="button" type="button">
+                  Khmer NiDA
+                </button>
+              </div>
+            </div>
+
+            <div class='d-inline-flex my-1 mx-1'>
+              <div class="button" id="div-system-keyboard">
+                <button id="btn-system-keyboard" class="btn btn-sm bg-light" data-toggle="button" type="button">
+                  (system keyboard)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class='d-inline-flex my-1 mx-1'>
+            <div class="dropdown" id="dropdown-examples">
+              <button id="btn-examples" class="btn btn-sm bg-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Examples
+                <span class="bi-caret-down-fill"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btn-examples">
+                <!-- filled by examples.js -->
+              </ul>
+            </div>
+          </div>
+
+          <div class='d-inline-flex my-1 mx-1'>
+            <div class="dropdown" id="dropdown-device">
+              <button id="btn-device" class="btn btn-sm bg-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Device
+                <span class="bi-caret-down-fill"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btn-device">
+                <li><h4 class="dropdown-header">Desktop Browsers</h4></li>
+                <li><button class="dropdown-item" type="button" data-device='Windows'>Windows</button></li>
+                <li><button class="dropdown-item" type="button" data-device='macOS'>macOS</button></li>
+                <li><button class="dropdown-item" type="button" data-device='Linux'>Linux</button></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><h4 class="dropdown-header">Phone Devices</h4></li>
+                <li><button class="dropdown-item" type="button" data-device='iPhone'>iPhone 5S</button></li>
+                <li><button class="dropdown-item" type="button" data-device='Pixel5'>Pixel 5</button></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><h4 class="dropdown-header">Tablet Devices</h4></li>
+                <li><button class="dropdown-item" type="button" data-device='iPadMini'>iPad Mini</button></li>
+                <li><button class="dropdown-item" type="button" data-device='Nexus9'>Nexus 9</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class='container-fluid'>
+
+      <div class='row mb-2 mt-2'>
+        <div class='col'>
+
+
+          <div id='examples' class='card rounded-3'>
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs" id="examples-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><span class="bi-check"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span class="bi-1-square-fill"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span class="bi-2-square-fill"></span></a>
+                </li>
+              </ul>
+            </div>
+            <div id='examples-body' class="card-body container">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='col'>
+          <div id='content'>
+            <div id='character-grid' class='rounded-3'>
+              <!-- contains the breakdown of characters from the input-area -->
+            </div>
+            <div id='input-area'><textarea id='ta1' class='font-khmer-busra-test test'></textarea></div>
+            <div id='osk-host-frame'>
+              <div id='osk-host'>
+                <!-- Contains the inline OSK -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-absolute top-0 end-0 p-3 toast-container" id='toast-container'>
+        <div id='toast-info-template' data-bs-dismiss="toast" class="toast text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+        <div id='toast-success-template' data-bs-dismiss="toast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+        <div id='toast-error-template' data-bs-dismiss="toast" class="toast text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class='modal' id='about-modal' tabindex='-1'>
+      <div class='modal-dialog'>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">About Khmer Encoding Structure Website</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>This website demonstrates the improved Khmer encoding structure,
+            using the Khmer Angkor keyboard and KhmerBusra Test font, and
+            compares to existing keyboards and fonts.
+            </p>
+            <p>&copy; 2023 Makara Sok, Marc Durdin</p>
+            <p><a id='about-help-link' target='_blank' href="https://www.unicode.org/L2/L2022/22290-khmer-encoding.pdf">More information on Khmer Encoding Structure</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src='test.js'></script>
+    <script src='fonts.js'></script>
+    <script src='menu.js'></script>
+    <script src='chargrid.js'></script>
+    <script src='examples.js'></script>
+    <script src='keyboards.js'></script>
+  </body>
+</html>

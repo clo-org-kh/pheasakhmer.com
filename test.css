@@ -1,0 +1,417 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: rgba(255,255,255,0.9);
+  background-blend-mode: lighten;
+  background-size: auto 50%;
+}
+
+@media(max-width:576px) {
+  body {
+    background-size: 75%;
+  }
+}
+
+h2 {
+    font-family: sans-serif
+}
+
+.install-link {
+  background: none repeat scroll 0 0 #CCCCCC;
+  border: 1px solid #444444;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  color: #444444;
+  font-family: Sans-serif;
+  font-size: 10pt;
+  padding: 6px;
+  margin: 12px 2px 0 2px;
+  text-decoration: none;
+}
+
+.header {
+  padding: 4px 8px;
+  background: #424248;
+  color: #f0f0ff;
+}
+
+.header div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header div h2 {
+  margin: 4px;
+}
+
+.header label {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.header select {
+  height: 29px;
+  border-radius: 4px;
+  background: #CCCCCC;
+}
+
+.header div.float-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.float-right a.install-link {
+  margin: 8px 8px 0 0 ;
+}
+
+.clear {
+  clear: both;
+}
+
+#content {
+  margin: 0px 16px 8px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.test {
+  font-size: 1.5em;
+  background-color: #ffffee;
+  height:100px;
+  width:100%;
+  min-height:30px;
+}
+
+.desktop-device .test {
+  box-sizing: border-box;
+  padding: 4px;
+  margin: 0;
+  width:100%;
+}
+
+.install-link {
+  background: none repeat scroll 0 0 #CCCCCC;
+  border: 1px solid #444444;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  color: #444444;
+  display: none;
+  font-family: Sans-serif;
+  font-size: 10pt;
+  margin: 0;
+  padding: 6px;
+  margin: 2px;
+  text-decoration: none;
+}
+
+/** Mobile, Tablet **/
+
+.touch-device #dropdown-device {
+  display: none;
+}
+
+.touch-device #div-system-keyboard {
+  display: none;
+}
+
+.install-link .ios,
+.install-link .android {
+  display: none;
+}
+
+.install-link-packages,
+#install-link-packages,
+#model-link {
+  display: inline-block;
+}
+
+.touch-device #character-grid {
+  height: 49px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#character-grid {
+  min-height: 49px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 0 0 8px 0;
+  border: solid 1px #cccccc;
+}
+
+#character-grid > div {
+  display: inline-block;
+}
+
+.char-char,
+.char-code {
+  border-right: solid 1px #eeeeee;
+  margin-right: 2px;
+}
+
+.char-char {
+  border-bottom: solid 1px #eeeeee;
+}
+
+.cursor > .char-char,
+.cursor > .char-code {
+  border-right: solid 3px blue;
+  margin-right: 0;
+}
+
+.cursor#character-grid {
+  border-left: solid 3px blue;
+}
+
+.cursor-selected {
+  background: #e0e0ff;
+}
+
+.char-char {
+  font-size: 14pt;
+  text-align: center;
+}
+
+.char-code {
+  font: 8pt Consolas,Courier;
+  padding: 4px;
+}
+
+
+/*
+ * ---------------------
+ * Device frame position
+ * ---------------------
+ */
+
+#osk-host-frame {
+  margin: 16px 0;
+}
+
+#osk-host .kmw-key-row > .kmw-key-square {
+  /* We don't want the OSK to ever float over anything else when it is
+     hosted in our frame. This should probably be fixed in KeymanWeb,
+     as an embedded OSK should not have z-indexing... */
+  z-index: auto !important;
+}
+
+/* --- iPadMini Device --- */
+
+#osk-host-frame.iPadMini {
+  margin: 0;
+  background-image: url(tablet-ipad-landscape.png);
+  background-repeat: no-repeat;
+  padding-left: 97px;
+  background-position-y: -358px;
+  height: 1000px;
+  width: 1045px;
+  padding-top: 62px;
+}
+
+#osk-host-frame.iPadMini .kmw-osk-frame,
+#osk-host-frame.iPadMini .kmw-key-layer-group {
+  border-radius: 0 0 5px 5px;
+}
+
+/* --- iPhone Device --- */
+
+#osk-host-frame.iPhone {
+  margin: 0;
+  background-image: url(phone-iphone5-portrait.png);
+  background-position-x: 0px;
+  background-position-y: -794px;
+  height: 1800px;
+  width: 660px;
+  background-repeat: no-repeat;
+  padding-left: 91px;
+  padding-right: 50px;
+  padding-top: 64px;
+}
+
+#osk-host-frame.iPhone .kmw-osk-frame,
+#osk-host-frame.iPhone .kmw-key-layer-group {
+  border-radius: 0 0 3px 3px;
+}
+
+/* --- Pixel 5 Phone --- */
+
+#osk-host-frame.Pixel5 {
+  margin: 0;
+  background-image: url(phone-pixel5-portrait.png);
+  background-position-x: 0px;
+  background-position-y: -810px;
+  height: 1800px;
+  width: 660px;
+  background-repeat: no-repeat;
+  padding-left: 73px;
+  padding-right: 50px;
+  padding-top: 70px;
+}
+
+/* --- Nexus 9 Tablet --- */
+
+#osk-host-frame.Nexus9 {
+  margin: 0;
+  background-image: url(tablet-nexus9-landscape.png);
+  background-repeat: no-repeat;
+  padding-left: 132px;
+  background-position-y: -250px;
+  height: 1000px;
+  width: 1024px;
+  padding-top: 72px;
+}
+
+/*
+ * ---------------------
+ * Input area layout
+ * ---------------------
+ */
+
+#input-area {
+  line-height: 0;
+}
+
+#input-area * {
+  line-height: normal;
+}
+
+#input-area, #character-grid {
+  width: 100%;
+}
+
+/* Package install */
+
+#package-install {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#package-install td,
+#package-install th {
+  border: solid 1px #c0c0c0;
+  padding: 8px;
+}
+
+#package-install th {
+  background: #cccccc;
+}
+
+/* File drop */
+
+#drop-area {
+  border: 2px dashed #ffffff00;
+  border-radius: 20px;
+  position: relative;
+}
+
+#drop-area.highlight {
+  border: 2px dashed #ccc;
+}
+
+#drop-file,
+#drop-button {
+  display: none;
+}
+
+#drop-area.highlight {
+  border-color: black;
+}
+
+#drop-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffc0;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-upload' viewBox='0 0 16 16'><path d='M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z'/><path d='M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z'/></svg>");
+  background-position: center;
+  background-size: 2in;
+  background-repeat: no-repeat;
+}
+
+#drop-area.highlight #drop-image {
+  display: block;
+}
+
+#keyman-developer-logo {
+  width: 30px;
+}
+
+#btn-menu {
+  padding: 2px;
+}
+
+#btn-menu svg {
+  width: 24px;
+}
+
+__disabled__ #toast-container {
+  /* Pop toasts above OSK and menus */
+  z-index: 11000;
+}
+
+.navbar button {
+  transition: background 0.5s ease-in-out;
+}
+
+/* Examples */
+
+#dropdown-menu-keyboards {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #examples .example-text {
+    display: none;
+  }
+
+  #ta1 {
+    height: 55px;
+  }
+
+  #dropdown-menu-keyboards {
+    display: block;
+  }
+
+  #buttons-keyboards {
+    display: none;
+  }
+
+  #examples-body .row {
+    display: none;
+  }
+
+  #examples-body .row.active {
+    display: block;
+  }
+}
+
+#examples .correct kbd {
+  background-color: green;
+}
+
+#examples kbd {
+  background-color: darkred;
+}
+
+.example-text {
+  font-family: "Khmer Mondulkiri";
+}
