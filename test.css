@@ -429,3 +429,7 @@ __disabled__ #toast-container {
   max-height: 600px;
   overflow: scroll;
 }
+
+#example-tab-0 {
+  font-family: "Khmer Mondulkiri";
+}

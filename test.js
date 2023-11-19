@@ -216,7 +216,7 @@ window.onload = function() {
 
 /* Load keyboards */
 
-keyman.addKeyboards({
+keyman.addKeyboards(/*{
   id: 'khmer_angkor',
   name: 'Khmer Angkor',
   language: {
@@ -236,7 +236,8 @@ keyman.addKeyboards({
     region: 'Asia',
   },
   filename: '/keyboards/basic_kbdkni.js'
-}).then(() => {
+}*/
+'khmer_angkor', 'basic_kbdkni').then(() => {
   setKeyboard('Keyboard_khmer_angkor', 'km');
 });
 
