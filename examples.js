@@ -6,7 +6,7 @@ const examples = [
     keys: ['x','j','m',['shift','E'],'r'],
     description: 'the word "Khmer"',
     alternates: [
-      { keys: ['x',['shift','E'],'j','m','r'], description: "coeng typed before voewl" },
+      { keys: ['x',['shift','E'],'j','m','r'], description: "coeng typed before vowel" },
     ]
   },
   {
@@ -29,7 +29,7 @@ const examples = [
       { keys: ['s','"',';','b'], description: 'wrong shifter' },
       { keys: ['s','/','e',['shift','I'],'b'], description: 'two vowel chars instead of correct one' },
       { keys: ['s','u',';','b'], description: 'u vowel instead of dropped shifter' },
-      { keys: ['s','e',['shift','I'],'u','b'], description: 'u vowel instead of shifter, AND two vowel chars instead of correct one' },
+      { keys: ['s','e',['shift','I'],'u','b'], description: 'u vowel instead of shifter, AND two vowel chars' },
     ]
   }
 ];
