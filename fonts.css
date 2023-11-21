@@ -18,6 +18,11 @@
   src: url(NotoSansKhmer-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Khmer OS Battambang';
+  src: url(KhmerOSBattambang-Regular.ttf);
+}
+
 html #ta1.font-system {
   font-family: sans-serif !important;
 }
@@ -32,4 +37,8 @@ html #ta1.font-khmer-busra-test {
 
 html #ta1.font-noto-sans-khmer {
   font-family: "Noto Sans Khmer" !important;
+}
+
+html #ta1.font-khmer-os-battambang {
+  font-family: "Khmer OS Battambang" !important;
 }
