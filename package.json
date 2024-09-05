@@ -1,0 +1,22 @@
+{
+  "name": "khmer-syllable-example",
+  "version": "1.0.0",
+  "description": "ភាសាខ្មែរ.com",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "serve -n -l 3000 ."
+  },
+  "author": "Marc Durdin",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.3"
+  },
+  "dependencies": {
+    "array-shuffle": "^3.0.0",
+    "i18next": "^23.14.0",
+    "khmer-normalizer": "^1.0.2"
+  }
+}
