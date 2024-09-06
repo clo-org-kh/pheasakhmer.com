@@ -1,22 +1,4 @@
-import { examples } from "./examples.js";
-
-const enExampleText = examples.reduce((obj, example) => {
-  obj['example-'+example.id] = example.description.en;
-  example.alternates.reduce((obj, alt) => {
-    obj['example-'+example.id+'-alt-'+alt.id] = alt.description.en;
-    return obj;
-  }, obj);
-  return obj;
-}, {});
-
-const kmExampleText = examples.reduce((obj, example) => {
-  obj['example-'+example.id] = example.description.km;
-  example.alternates.reduce((obj, alt) => {
-    obj['example-'+example.id+'-alt-'+alt.id] = alt.description.km;
-    return obj;
-  }, obj);
-  return obj;
-}, {});
+import { kmExampleTranslations, enExampleTranslations } from "./examples.js";
 
 export const localizedElements = [
   'nav-system-caption', 'nav-example-caption', 'nav-device', 'nav-device-desktop', 'nav-device-phone',
@@ -56,7 +38,7 @@ export const resources = {
 
       // Help / Welcome dialog
 
-      "help-title": "Welcome to the Khmer Encoding Structure demo site",
+      "help-title": "Khmer Encoding Structure demo",
       "help-label-show-help-on-startup": "Show this when page first loads",
       "help-ok": "OK",
       "help-content": `
@@ -69,7 +51,8 @@ export const resources = {
         <p>
         To get you started, this site has some examples of ambiguous or
         difficult Khmer character encodings. Each example has multiple
-        keying orders, only one of which works in today's technology stack.
+        keying orders, only one of which produces validly encoded text in
+        today's technology stack.
         </p>
 
         <p>
@@ -87,8 +70,15 @@ export const resources = {
         </p>
 
         <p>
-        Learn more at the links below!
+        Learn more:
         </p>
+
+        <ul>
+          <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/">Khmer Encoding Structure home page</a></li>
+          <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf">Khmer Encoding Structure proposal</a></li>
+          <li><span class="bi-github"></span> <a href="https://github.com/mcdurdin/khmer-syllable-example">GitHub source for this site</a></li>
+          <li><span class="bi-envelope-at"></span> <a href="mailto:camlingorg@gmail.com">Contact us</a></li>
+        </ul>
 
         <p>&copy; 2024 Cambodia Linguistics Organization</p>
 
@@ -96,12 +86,6 @@ export const resources = {
 
         <p>Powered by Keyman TODO: Keyman logo</p>
 
-        <ul>
-          <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/">Khmer Encoding Structure home page</a></li>
-          <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf">Khmer Encoding Structure proposal</a></li>
-          <li><span class="bi-github"></span> <a href="https://github.com/mcdurdin/khmer-syllable-example">GitHub source for this site</a></li>
-          <li><span class="bi-envelope-at"></span> <a href="about:blank">Contact us</a> TODO</li>
-        </ul>
       `,
 
       // About dialog
@@ -150,7 +134,7 @@ export const resources = {
       "example-info-ok": "OK",
 
       // descriptions of examples are imported from examples.js
-      ...enExampleText,
+      ...enExampleTranslations,
     }
   },
   km: {
@@ -158,7 +142,7 @@ export const resources = {
       "help-title": "សួស្តី",
       "menu-install-keyboard": "សួស្តី Khmer Angkor",
 
-      ...kmExampleText
+      ...kmExampleTranslations,
     }
   }
 };

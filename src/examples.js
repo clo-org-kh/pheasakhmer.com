@@ -1,10 +1,14 @@
 // Note: descriptions here are imported into translations.js
 
 export const examples = [
+
+  //---------------------------------------------------------------------------------------------------
+  // ខ្មែរ
+  //---------------------------------------------------------------------------------------------------
   {
     text: 'ខ្មែរ',
     id: 'word-khmer',
-    description: { en: "The word 'Khmer'", km: "" },
+    description: { en: "the word 'Khmer'", km: "" },
     alternates: [
       {
         id: 1,
@@ -39,7 +43,7 @@ export const examples = [
         id: 2,
         description: { en: `
           <p>
-            In this example, the coeng ma subconsonant ្ម has been typed after the vowel ែ.
+            In this example, the COENG MO subconsonant ្ម has been typed after the vowel ែ.
             With the NiDA keyboard and the existing Khmer Unicode encoding, this appears
             identical to the alternate (correct) order, so it is not possible to tell by
             reading that it is wrong.
@@ -67,6 +71,10 @@ export const examples = [
       },
     ]
   },
+
+  //---------------------------------------------------------------------------------------------------
+  // ស្ត្រី
+  //---------------------------------------------------------------------------------------------------
   {
     text: 'ស្ត្រី',
     id: "woman",
@@ -74,7 +82,13 @@ export const examples = [
     alternates: [
       {
         id: 1,
-        description: { en: "NiDA keying order", km: "" },
+        description: { en: `
+          <p>
+            This example follows the NiDA keying order. That means that the user is
+            typing in exactly the same order as the encoded order.
+          </p>
+        `, km: ""
+        },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '្', key: 'default-K_J' },
@@ -200,6 +214,10 @@ export const examples = [
       },
     ]
   },
+
+  //---------------------------------------------------------------------------------------------------
+  // ស៊ើប
+  //---------------------------------------------------------------------------------------------------
   {
     text: 'ស៊ើប',
     id: 'detect',
@@ -207,7 +225,12 @@ export const examples = [
     alternates: [
       {
         id: 1,
-        description: { en: "NiDA keying order", km: "" },
+        description: { en: `
+          <p>
+            This example follows the NiDA keying order. That means that the user is
+            typing in exactly the same order as the encoded order.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '៊', key: 'default-K_SLASH' },
@@ -228,7 +251,8 @@ export const examples = [
           <p>
             This example uses the wrong consonant shifter, ៉ MUSIKATOAN
             instead of ៊ TRISAP on ស. While this is not technically an
-            invalid encoding, it is never valid in Khmer, and so the new
+            invalid encoding, it is not linguistically plausible, because
+            the consonant ស is already in the first series, and so the new
             Khmer Encoding Structure enforces use of ៊ TRISAP in this
             position.
           </p>
@@ -323,5 +347,51 @@ export const examples = [
         ],
       },
     ]
-  }
+  },
+
+        //  កុំ ប៉័ង លោក
+
+  //---------------------------------------------------------------------------------------------------
+  // ញ៉ាំ
+  //---------------------------------------------------------------------------------------------------
+  {
+    text: 'ញ៉ាំ',
+    id: 'nham',
+    description: { en: "'to eat'", km: "" },
+    alternates: [
+      {
+        id: 1,
+        description: {
+          en: `
+          <p>
+            This example follows the NiDA keying order. That means that the user is
+            typing in exactly the same order as the encoded order.
+          </p>
+
+          <p>
+            <b>Note:</b> a bug on iOS and macOS means that the correctly encoded order is
+            shown wrongly, with ៉ MUSIKATOAN shown above ញ, instead of underneath.
+            This of course leads to great confusion! This bug has been reported to
+            Apple for resolution.
+          </p>
+        `,
+          km: `
+        `,
+        },
+        keys_nida: [
+          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
+          { cap: '៉', key: ['shift', 'shift-K_QUOTE'] },
+          { cap: 'ាំ', key: ['shift', 'shift-K_A'] },
+        ],
+        keys_angkor_mobile: [
+          { cap: 'ញ', key: 'default-K_J+shift' },
+          { cap: '់', key: ['longpress', 'default-K_QUOTE'], longpress: true },
+          { cap: '៉', key: ['popup', 'popup-default-K_QUOTE+shift'] },
+          { cap: 'ា', key: ['longpress', 'default-K_A'], longpress: true },
+          { cap: 'ាំ', key: ['popup', 'popup-default-K_A+shift'] },
+        ],
+      },
+    ]
+  },
+
 ];
