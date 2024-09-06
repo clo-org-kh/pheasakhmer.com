@@ -626,7 +626,7 @@ export const examples = [
 
           <p>
             The first three letters of this example are actually a valid sequence for
-            typing ញុំ​ (which is not a Khmer word, but is similar to e.g. កុំ 'do not').
+            typing ញុំ​ (which is not a Khmer word, but follows the same rules as e.g. កុំ 'do not').
             This close similarity is another reason why it is so easily confused.
           </p>
 

@@ -43,30 +43,50 @@ export const resources = {
       "help-ok": "OK",
       "help-content": `
         <p>
-        This website demonstrates the improved
-        <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/">Khmer encoding structure</a>,
-        using the Khmer Angkor keyboard and Khmer Busra Test font.
+          This website demonstrates the improved
+          <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/" target="_blank">Khmer Encoding Structure</a>,
+          using the Khmer Angkor keyboard and Khmer Busra Test font.
         </p>
 
         <p>
-        To get you started, this site has some examples of ambiguous or
-        difficult Khmer character encodings. Each example has multiple
-        keying orders, only one of which produces validly encoded text in
-        today's technology stack.
+          To get you started, this site has some examples of common
+          Khmer words that have ambiguous or difficult keying orders. We compare
+          today's technology stack (Khmer Unicode standard) and how it will be
+          easier in the future with the Khmer Encoding Structure.
+        </p>
+
+        <ol>
+          <li>
+            Start by selecting the Khmer system "today" (Khmer Unicode standard).
+          </li>
+          <li>
+            Select an example to try. Each example has multiple key sequences
+            &mdash; but only one of these sequences produces correctly
+            encoded text with today's technology.
+          </li>
+          <li>
+            Try typing the examples &mdash; either typing them yourself on your
+            keyboard, or by clicking <b><span class="bi-keyboard"></span> Try it</b>. Then try them again with
+            the Future system &mdash; the Khmer Encoding Structure.
+          </li>
+        </ol>
+
+        <p>
+          Do you know which is the right keying order for each example with the
+          NiDA keyboard? The ℹ️ link next to each key sequence provides a detailed
+          explanation.
         </p>
 
         <p>
-        Try typing the examples &mdash; either typing them yourself on your
-        keyboard, or by clicking <b>Try it</b>. Then try them again with
-        the Khmer system of the Future &mdash; the Khmer Encoding Structure.
+          You will see that with the new Khmer Angkor keyboard, harnessing the
+          power of the Khmer Encoding Structure, all the key sequences will just
+          work! No need to remember complicated rules &mdash; go ahead, try it!
         </p>
 
         <p>
-        Do you know which is the right keying order for each example with the
-        NiDA keyboard? With the new Khmer Angkor keyboard, harnessing the power
-        of the Khmer Encoding Structure, <i>all</i> of the key sequences will
-        work correctly! No need to remember complicated rules &mdash; go
-        ahead, try it!
+          You can also type any Khmer text you like: try experimenting with
+          other words and watch how Khmer Encoding Structure handles all the
+          complex ordering rules.
         </p>
 
         <p>

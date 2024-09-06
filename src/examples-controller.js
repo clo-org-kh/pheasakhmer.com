@@ -51,7 +51,7 @@ function keysToHtml(keys) {
 function addShowMeButton(colKeys, keys) {
   const btnShowMe = document.createElement('button');
   btnShowMe.className = 'btn btn-sm btn-outline-primary example-try-it-button';
-  btnShowMe.innerHTML = translate('example-try-it');
+  btnShowMe.innerHTML = "<span class='bi-keyboard'></span> " + translate('example-try-it');
   btnShowMe.addEventListener('click', function() {
     const items = [];
     let n = 0;
