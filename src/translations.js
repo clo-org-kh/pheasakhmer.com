@@ -96,7 +96,7 @@ export const resources = {
         <ul>
           <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/">Khmer Encoding Structure home page</a></li>
           <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf">Khmer Encoding Structure proposal</a></li>
-          <li><span class="bi-file-earmark-pdf"></span> <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">Spoof-Vulnerable Rendering in Khmer Unicode Implementation research paper</a></li>
+          <li><span class="bi-journal-text"></span> <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">Spoof-Vulnerable Rendering in Khmer Unicode Implementation research paper</a></li>
           <li><span class="bi-github"></span> <a href="https://github.com/clo-org-kh/pheasakhmer.com">GitHub source for this site</a></li>
           <li><span class="bi-envelope-at"></span> <a href="mailto:camlingorg@gmail.com">Contact us</a></li>
         </ul>
@@ -130,7 +130,7 @@ export const resources = {
         <ul>
           <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/" target="_blank">Khmer Encoding Structure home page</a></li>
           <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank">Khmer Encoding Structure proposal</a></li>
-          <li><span class="bi-file-earmark-pdf"></span> <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">Spoof-Vulnerable Rendering in Khmer Unicode Implementation research paper</a></li>
+          <li><span class="bi-journal-text"></span> <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">Spoof-Vulnerable Rendering in Khmer Unicode Implementation research paper</a></li>
           <li><span class="bi-github"></span> <a href="https://github.com/clo-org-kh/pheasakhmer.com" target="_blank">GitHub source for this site</a></li>
           <li><span class="bi-envelope-at"></span> <a href="mailto:camlingorg@gmail.com">Contact us</a></li>
         </ul>
