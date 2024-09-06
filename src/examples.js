@@ -20,7 +20,6 @@ export const examples = [
           </p>
         `,
           km: `
-
         `,
         },
         keys_nida: [
@@ -47,6 +46,10 @@ export const examples = [
             With the NiDA keyboard and the existing Khmer Unicode encoding, this appears
             identical to the alternate (correct) order, so it is not possible to tell by
             reading that it is wrong.
+          </p>
+
+          <p>
+            This is an example of <b>Case #1</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
           </p>
 
           <p>
@@ -109,7 +112,22 @@ export const examples = [
       },
       {
         id: 2,
-        description: { en: "coeng ro typed before coeng to", km: "" },
+        description: { en: `
+          <p>
+            In this example, the COENG RO ្រ is being typed before COENG TA ្ត. This
+            does not match the expected phonetic ordering of the subconsonants. On
+            many devices, this renders identically to the correct phonetic encoding
+            order.
+          </p>
+
+          <p>
+            This is an example of <b>Case #2</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will both fix this incorrect ordering automatically.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '្', key: 'default-K_J' },
@@ -130,7 +148,27 @@ export const examples = [
       },
       {
         id: 3,
-        description: { en: "coeng do instead of coeng to", km: "" },
+        description: { en: `
+          <p>
+            This is one of the most contentious issues: COENG DA ្ដ is being used
+            instead of COENG TA ្ត. In modern Khmer, COENG DA ្ដ and
+            COENG TA ្ត have an identical presentation. This makes them confusable.
+          </p>
+
+          <p>
+            In old and middle Khmer, COENG DA can have a differentiated form; see the
+            <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank">proposal document</a>,
+            <i>Coeng ta and Coeng da</i> section, for more detail.
+          </p>
+
+          <p>
+            This is an example of <b>Case #8</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer change COENG DA ្ដ to COENG TA ្ត automatically.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '្', key: 'default-K_J' },
@@ -151,7 +189,39 @@ export const examples = [
       },
       {
         id: 4,
-        description: { en: "coeng do instead of coeng to, wrong order", km: "" },
+        description: { en: `
+          <p>
+            In this example, there are two problems:
+          </p>
+
+          <ol>
+            <li>
+              This is one of the most contentious issues: COENG DA ្ដ is being used
+              instead of COENG TA ្ត. In modern Khmer, COENG DA ្ដ and
+              COENG TA ្ត have an identical presentation. This makes them confusable.
+            </li>
+            <li>
+              The COENG RO ្រ is being typed before COENG DA ្ដ. This
+              does not match the expected phonetic ordering of the subconsonants. On
+              many devices, this renders identically to the correct phonetic encoding
+              order.
+            </li>
+          </ol>
+
+          <p>
+            In old and middle Khmer, COENG DA can have a differentiated form; see the
+            <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank">proposal document</a>,
+            <i>Coeng ta and Coeng da</i> section, for more detail.
+          </p>
+
+          <p>
+            This is an example of <b>Case #2</b> and <b>Case #8</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will both fix these two problems automatically.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '្', key: 'default-K_J' },
@@ -172,7 +242,35 @@ export const examples = [
       },
       {
         id: 5,
-        description: { en: "vowel before coengs", km: "" },
+        description: { en: `
+          <p>
+            This example illustrates two problems:
+          </p>
+
+          <ul>
+            <li>
+              COENG TA ្ត and COENG RO ្រ have been typed after the vowel ី. This
+              is not linguistically consistent with the expected order.
+            </li>
+            <li>
+              COENG RO ្រ is being typed before COENG TA ្ត. This
+              does not match the expected phonetic ordering of the subconsonants.
+            </li>
+          </ul>
+
+          <p>
+            On many devices, this appears identical to the alternate (correct) order,
+            so it is not possible to tell by reading that it is wrong.
+          </p>
+
+          <p>
+            This is an example of <b>Case #1</b> and <b>Case #2</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will both fix this incorrect ordering automatically.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
@@ -193,7 +291,47 @@ export const examples = [
       },
       {
         id: 6,
-        description: { en: "vowel before coengs, coengs wrong order, do instead of to!", km: "" },
+        description: { en: `
+          <p>
+            This example illustrates <i>three</i> problems!
+          </p>
+
+          <ul>
+            <li>
+              This is one of the most contentious issues: COENG DA ្ដ is being used
+              instead of COENG TA ្ត. In modern Khmer, COENG DA ្ដ and
+              COENG TA ្ត have an identical presentation. This makes them confusable.
+            </li>
+            <li>
+              COENG DA ្ដ and COENG RO ្រ have been typed after the vowel ី. This
+              is not linguistically consistent with the expected order.
+            </li>
+            <li>
+              COENG RO ្រ is being typed before COENG DA ្ដ. This
+              does not match the expected phonetic ordering of the subconsonants.
+            </li>
+          </ul>
+
+          <p>
+            On many devices, this appears identical to the alternate (correct) order,
+            so it is not possible to tell by reading that it is wrong.
+          </p>
+
+          <p>
+            In old and middle Khmer, COENG DA can have a differentiated form; see the
+            <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank">proposal document</a>,
+            <i>Coeng ta and Coeng da</i> section, for more detail.
+          </p>
+
+          <p>
+            This is an example of <b>Case #1</b>, <b>Case #2</b>, and <b>Case #8</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will both fix the ordering, and replace
+            COENG DA ្ដ with COENG TA ្ត automatically.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
@@ -258,17 +396,26 @@ export const examples = [
           </p>
 
           <p>
-            On some devices, ៉ MUSIKATOAN may render in its down-shifted
-            form, even when on ស, which would make this confusable.
+            On many devices, ៉ MUSIKATOAN may render in its down-shifted
+            form, even when used with ស, which makes this confusable.
+          </p>
+
+          <p>
+            This is an example of <b>Case #4</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will correct the shifter automatically
+            when it is used in the down-shifted form.
           </p>
         `, km: "" },
-        keys_nida_desktop: [
+        keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
-          { cap: ['Shift', '៉'], key: ['shift', 'shift-K_QUOTE'] },
+          { cap: '៉', key: 'default-K_QUOTE+shift' },
           { cap: 'ើ', key: 'default-K_COLON' },
           { cap: 'ប', key: 'default-K_B' },
         ],
-        keys_nida: [
+        keys_nida_desktop: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: ['Shift', '៉'], key: ['shift', 'shift-K_QUOTE'] },
           { cap: 'ើ', key: 'default-K_COLON' },
@@ -291,7 +438,21 @@ export const examples = [
 
       {
         id: 3,
-        description: { en: "two vowel chars instead of correct one", km: "" },
+        description: { en: `
+          <p>
+            In this example, the vowels េ and ី have been typed separately, which on
+            many devices renders identically to the correct single vowel character ើ.
+            The Khmer Unicode encoding expects only a single vowel character per syllable.
+          </p>
+
+          <p>
+            This is an example of <b>Case #7</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will merge the two vowels េ and ី into ើ automatically.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '៊', key: 'default-K_SLASH' },
@@ -312,7 +473,23 @@ export const examples = [
 
       {
         id: 4,
-        description: { en: "ou vowel instead of dropped shifter", km: "" },
+        description: { en: `
+          <p>
+            This is one of the most common typing issues: using
+            the U vowel ុ instead of the appropriate TRISAP ៊ consonant
+            shifter, because the consonant shifter looks like the vowel
+            when it is rendered underneath the base consonant.
+          </p>
+
+          <p>
+            This is an example of <b>Case #4</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will convert the U vowel ុ to
+            appropriate shifter (TRISAP ៊ or MUSIKATOAN ៉) automatically.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: 'ុ', key: 'default-K_U' },
@@ -329,7 +506,35 @@ export const examples = [
 
       {
         id: 5,
-        description: { en: "ou vowel instead of dropped shifter, and two vowel chars", km: "" },
+        description: { en: `
+          <p>
+            This example illustrates two problems:
+          </p>
+
+          <ul>
+            <li>
+              This is one of the most common typing issues: using
+              the U vowel ុ instead of the appropriate TRISAP ៊ consonant
+              shifter, because the consonant shifter looks like the vowel
+              when it is rendered underneath the base consonant.
+            </li>
+            <li>
+              The vowels េ and ី have been typed separately, which on
+              many devices renders identically to the correct single vowel character ើ.
+              The Khmer Unicode encoding expects only a single vowel character per syllable.
+            </li>
+          </ul>
+
+          <p>
+            This is an example of <b>Case #4</b> and <b>Case #7</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will merge the two vowels េ and ី into ើ,
+            and convert the U vowel ុ to appropriate shifter (TRISAP ៊ or MUSIKATOAN ៉)
+            automatically.
+          </p>
+        `, km: "" },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: 'េ', key: 'default-K_E' },
@@ -348,8 +553,6 @@ export const examples = [
       },
     ]
   },
-
-        //  កុំ ប៉័ង លោក
 
   //---------------------------------------------------------------------------------------------------
   // ញ៉ាំ
@@ -370,9 +573,10 @@ export const examples = [
 
           <p>
             <b>Note:</b> a bug on iOS and macOS means that the correctly encoded order is
-            shown wrongly, with ៉ MUSIKATOAN shown above ញ, instead of underneath.
-            This of course leads to great confusion! This bug has been reported to
-            Apple for resolution.
+            rendered incorrectly, with ៉ MUSIKATOAN shown above ញ, instead of underneath.
+            This of course leads to great confusion! This bug has been reported to Apple for
+            resolution (FB5761346).
+            <a href="https://marc.durdin.net/2017/03/when-nyam-meets-nyam/" target="_blank">More discussion (2017)</a>.
           </p>
         `,
           km: `
@@ -391,7 +595,97 @@ export const examples = [
           { cap: 'ាំ', key: ['popup', 'popup-default-K_A+shift'] },
         ],
       },
+
+      {
+        id: 2,
+        description: {
+          en: `
+          <p>
+            This example shows two common problems, both deriving from
+            typing the text as it is visually presented:
+          </p>
+
+          <ul>
+            <li>
+              This is one of the most common typing issues: using
+              the U vowel ុ instead of the appropriate MUSIKATOAN ៉ consonant
+              shifter, because the consonant shifter looks like the vowel
+              when it is rendered underneath the base consonant.
+            </li>
+            <li>
+              The NIKAHIT sign ំ has been typed separately and before the AA
+              vowel ា.
+            </li>
+          </ul>
+
+          <p>
+            On most devices, this example renders almost identically to the expected
+            (correct) example. The NIKAHIT mark ំ is usually rendered slightly
+            left of the AA ា vowel, but this is very subtle and easily missed.
+          </p>
+
+          <p>
+            The first three letters of this example are actually a valid sequence for
+            typing ញុំ​ (which is not a Khmer word, but is similar to e.g. កុំ 'do not').
+            This close similarity is another reason why it is so easily confused.
+          </p>
+
+          <p>
+            <b>Note:</b> a bug on iOS and macOS means that the correctly encoded order is
+            rendered incorrectly, with ៉ MUSIKATOAN shown above ញ, instead of underneath.
+            This of course leads to great confusion! This bug has been reported to Apple for
+            resolution (FB5761346).
+            <a href="https://marc.durdin.net/2017/03/when-nyam-meets-nyam/" target="_blank">More discussion (2017)</a>.
+          </p>
+
+          <p>
+            This is an example of <b>Case #4</b> and <b>Case #5</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
+          </p>
+
+          <p>
+            Khmer Angkor and the normalizer will reorder ា and ំ,
+            and convert the U vowel ុ to appropriate shifter (MUSIKATOAN ៉)
+            automatically.
+          </p>
+        `,
+          km: `
+        `,
+        },
+        keys_nida: [
+          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
+          { cap: 'ុ', key: 'default-K_U' },
+          { cap: ['Shift', 'ំ'], key: ['shift', 'shift-K_M'] },
+          { cap: 'ា', key: 'default-K_A' },
+        ],
+        keys_angkor_mobile: [
+          { cap: 'ញ', key: 'default-K_J+shift' },
+          { cap: 'ុ', key: 'default-K_U' },
+
+          { cap: 'ម', key: ['longpress', 'default-K_M'], longpress: true },
+          { cap: 'ំ', key: ['popup', 'popup-default-K_M+shift'] },
+          { cap: 'ា', key: 'default-K_A' },
+        ],
+      },
     ]
   },
 
+  // additional examples: កុំ ប៉័ង លោក
 ];
+
+export const enExampleTranslations = examples.reduce((obj, example) => {
+  obj['example-'+example.id] = example.description.en;
+  example.alternates.reduce((obj, alt) => {
+    obj['example-'+example.id+'-alt-'+alt.id] = alt.description.en;
+    return obj;
+  }, obj);
+  return obj;
+}, {});
+
+export const kmExampleTranslations = examples.reduce((obj, example) => {
+  obj['example-'+example.id] = example.description.km;
+  example.alternates.reduce((obj, alt) => {
+    obj['example-'+example.id+'-alt-'+alt.id] = alt.description.km;
+    return obj;
+  }, obj);
+  return obj;
+}, {});

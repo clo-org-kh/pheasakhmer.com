@@ -76,16 +76,24 @@ export const resources = {
         <ul>
           <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/">Khmer Encoding Structure home page</a></li>
           <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf">Khmer Encoding Structure proposal</a></li>
-          <li><span class="bi-github"></span> <a href="https://github.com/mcdurdin/khmer-syllable-example">GitHub source for this site</a></li>
+          <li><span class="bi-file-earmark-pdf"></span> <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">Spoof-Vulnerable Rendering in Khmer Unicode Implementation research paper</a></li>
+          <li><span class="bi-github"></span> <a href="https://github.com/clo-org-kh/pheasakhmer.com">GitHub source for this site</a></li>
           <li><span class="bi-envelope-at"></span> <a href="mailto:camlingorg@gmail.com">Contact us</a></li>
         </ul>
 
         <p>&copy; 2024 Cambodia Linguistics Organization</p>
 
-        <p>TODO: CLO logo | SIL logo | NPIC logo | CADT logo</p>
+        <p><img src="clo-big.png" style="width: 100%" alt="Cambodia Linguistics Organization logo"></p>
 
-        <p>Powered by Keyman TODO: Keyman logo</p>
+        <p style="text-align: center">
+        <a href="https://www.sil.org" target="_blank"><img src="sil.png" style="width:30%" alt="SIL Global"></a>
+        <a href="https://npic.edu.kh" target="_blank"><img src="npic.png" style="width:30%" alt="National Polytechnic Institute of Cambodia"></a>
+        <a href="https://www.cadt.edu.kh" target="_blank"><img src="cadt.png" style="width:30%" alt="Cambodia Academy of Digital Technology"></a>
+        </p>
 
+        <p style="text-align: center">
+        <a href="https://keyman.com" target="_blank"><img src="powered-by-keyman-280x36.png" alt="Powered by Keyman"></a>
+        </p>
       `,
 
       // About dialog
@@ -99,24 +107,33 @@ export const resources = {
         compares to existing keyboards and fonts.
         </p>
 
+        <ul>
+          <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/" target="_blank">Khmer Encoding Structure home page</a></li>
+          <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank">Khmer Encoding Structure proposal</a></li>
+          <li><span class="bi-file-earmark-pdf"></span> <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">Spoof-Vulnerable Rendering in Khmer Unicode Implementation research paper</a></li>
+          <li><span class="bi-github"></span> <a href="https://github.com/clo-org-kh/pheasakhmer.com" target="_blank">GitHub source for this site</a></li>
+          <li><span class="bi-envelope-at"></span> <a href="mailto:camlingorg@gmail.com">Contact us</a></li>
+        </ul>
+
         <p>&copy; 2024 Cambodia Linguistics Organization</p>
 
-        <p>TODO: CLO logo | SIL logo | NPIC logo | CADT logo</p>
+        <p><img src="clo-big.png" style="width: 100%" alt="Cambodia Linguistics Organization logo"></p>
 
-        <p>Powered by Keyman TODO: Keyman logo</p>
+        <p style="text-align: center">
+        <a href="https://www.sil.org" target="_blank"><img src="sil.png" style="width:30%" alt="SIL Global"></a>
+        <a href="https://npic.edu.kh" target="_blank"><img src="npic.png" style="width:30%" alt="National Polytechnic Institute of Cambodia"></a>
+        <a href="https://www.cadt.edu.kh" target="_blank"><img src="cadt.png" style="width:30%" alt="Cambodia Academy of Digital Technology"></a>
+        </p>
+
+        <p style="text-align: center">
+        <a href="https://keyman.com" target="_blank"><img src="powered-by-keyman-280x36.png" alt="Powered by Keyman"></a>
+        </p>
 
         <p>
         If you encounter any issues with this website, please report them
         on our
-        <span class="bi-github"></span> <a href="https://github.com/mcdurdin/khmer-syllable-example/issues">issue tracker</a>.
+        <span class="bi-github"></span> <a href="https://github.com/clo-org-kh/pheasakhmer.com/issues">issue tracker</a>.
         </p>
-
-        <ul>
-          <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/">Khmer Encoding Structure home page</a></li>
-          <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf">Khmer Encoding Structure proposal</a></li>
-          <li><span class="bi-github"></span> <a href="https://github.com/mcdurdin/khmer-syllable-example">GitHub source for this site</a></li>
-          <li><span class="bi-envelope-at"></span> <a href="about:blank">Contact us</a> TODO</li>
-        </ul>
       `,
 
       // Hamburger menu

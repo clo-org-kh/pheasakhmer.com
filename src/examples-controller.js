@@ -83,20 +83,20 @@ function addInfoButton(example, alt, keysHTML) {
 
 function getActiveKeyboardAndForm() {
   if(keyman.getActiveKeyboard() == 'Keyboard_basic_kbdkni') {
-    return isTouchDevice() ? 'keys_nida' : 'keys_nida_desktop';
+    if(!isTouchDevice() && (currentDevice == 'Windows' || currentDevice == 'macOS' || currentDevice == 'Linux')) {
+      return 'keys_nida_desktop';
+    }
+    return 'keys_nida';
   }
-  if(keyman.getActiveKeyboard() != 'Keyboard_khmer_angkor') {
-    return 'keys_nida'; // TODO: this is a bit of an assumption
-  }
-  if(isTouchDevice()) {
+
+  if(keyman.getActiveKeyboard() == 'Keyboard_khmer_angkor') {
+    if(!isTouchDevice() && (currentDevice == 'Windows' || currentDevice == 'macOS' || currentDevice == 'Linux')) {
+      return 'keys_angkor_desktop';
+    }
     return 'keys_angkor_mobile';
   }
 
-  if(currentDevice == 'Windows' || currentDevice == 'macOS' || currentDevice == 'Linux') {
-    return 'keys_angkor_desktop';
-  }
-
-  return 'keys_angkor_mobile';
+  return 'keys_nida'; // TODO: this is a bit of an assumption
 }
 
 function showExample(index) {
