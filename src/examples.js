@@ -604,19 +604,19 @@ export const examples = [
         `,
         },
         keys_nida: [
-          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
+          { cap: ['Shift','ញ'], key: ['shift', 'shift-K_J'] },
           { cap: '៉', key: 'default-K_QUOTE+shift' },
-          { cap: 'ាំ', key: ['shift', 'shift-K_A'] },
+          { cap: ['Shift','ាំ'], key: ['shift', 'shift-K_A'] },
         ],
         keys_nida_desktop: [
-          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
-          { cap: '៉', key: ['shift', 'shift-K_QUOTE'] },
-          { cap: 'ាំ', key: ['shift', 'shift-K_A'] },
+          { cap: ['Shift','ញ'], key: ['shift', 'shift-K_J'] },
+          { cap: ['Shift','៉'], key: ['shift', 'shift-K_QUOTE'] },
+          { cap: ['Shift','ាំ'], key: ['shift', 'shift-K_A'] },
         ],
         keys_angkor_desktop: [
-          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
-          { cap: '៉', key: ['shift', 'shift-K_QUOTE'] },
-          { cap: 'ាំ', key: ['shift', 'shift-K_A'] },
+          { cap: ['Shift','ញ'], key: ['shift', 'shift-K_J'] },
+          { cap: ['Shift','៉'], key: ['shift', 'shift-K_QUOTE'] },
+          { cap: ['Shift','ាំ'], key: ['shift', 'shift-K_A'] },
         ],
         keys_angkor_mobile: [
           { cap: 'ញ', key: 'default-K_J+shift' },
