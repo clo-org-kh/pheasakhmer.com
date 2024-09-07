@@ -4,7 +4,7 @@ export const localizedElements = [
   'nav-system-caption', 'nav-example-caption', 'nav-device', 'nav-device-desktop', 'nav-device-phone',
   'help-title', 'help-content', 'help-label-show-help-on-startup', 'help-ok',
   'about-title', 'about-content', 'about-ok',
-  'example-info-title', 'example-info-ok',
+  'example-info-title', 'example-info-ok', "example-info-render-title", "example-info-today-text", "example-info-future-text",
   "encoding-result-correct", "encoding-result-incorrect",
 ];
 
@@ -73,8 +73,8 @@ export const resources = {
 
         <p>
           Do you know which is the right keying order for each example with the
-          NiDA keyboard? The ℹ️ link next to each key sequence provides a detailed
-          explanation.
+          NiDA keyboard? Click the <b><span class="bi-question-octagon"></span> Learn more</b> button next to each key sequence
+          to read a detailed explanation.
         </p>
 
         <p>
@@ -165,10 +165,21 @@ export const resources = {
       // Examples
 
       "example-try-it": "Try it",
-      "example-info": "ℹ️",
+      "example-info": "Learn more",
 
       "example-info-title": "About this example",
       "example-info-ok": "OK",
+
+      "example-info-render-title": "How the Khmer Encoding Structure displays this encoding error",
+      "example-info-today-text": `
+        This is the result of typing this sequence with today's keyboard, using today's font. Encoding
+        errors may or may not be visible &mdash; depending on your device.
+      `,
+      "example-info-future-text": `
+        This is the result if you type this sequence with today's keyboard, and display with
+        the Khmer Busra Test future font. Encoding errors will be clearly shown with
+        dotted circles.
+      `,
 
       // descriptions of examples are imported from examples.js
       ...enExampleTranslations,

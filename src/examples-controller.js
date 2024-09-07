@@ -12,7 +12,7 @@ function fillExamples(t) {
   examplesDropdown.removeAll();
   for(let i = 0; i < examples.length; i++) {
     const example = examples[i];
-    example.alternates = arrayShuffle(example.alternates);
+    // example.alternates = arrayShuffle(example.alternates);
     example.description = t('example-'+example.id);
     examplesDropdown.add('#example'+i.toString(), example.text + ' ' + example.description);
   }
@@ -68,14 +68,19 @@ function addShowMeButton(colKeys, keys) {
 
 function addInfoButton(example, alt, keysHTML) {
   const btnInfo = document.createElement('button');
-  btnInfo.className = 'btn btn-sm example-info-button';
-  btnInfo.innerHTML = translate('example-info');
+  btnInfo.className = 'btn btn-sm btn-outline-primary example-info-button';
+  btnInfo.innerHTML = '<span class="bi-question-octagon"></span> '+translate('example-info');
   btnInfo.addEventListener('click', function() {
     // Show the info popup
     let exampleInfoModal = new bootstrap.Modal(document.getElementById('example-info-modal'));
     document.getElementById('example-info-keys').innerHTML = keysHTML;
     document.getElementById('example-info-title').innerHTML = example.text + ', ' + translate(`example-${example.id}`, {interpolation:{escapeValue: false}});
     document.getElementById('example-info-content').innerHTML = translate(`example-${example.id}-alt-${alt.id}`, {interpolation:{escapeValue: false}});
+
+    // only show the render for non-default
+    document.getElementById('example-info-render').style.display = alt.id == 1 || example.id == 'word-khmer' ? 'none' : '';
+    document.getElementById('example-info-today').innerHTML = alt.text;
+    document.getElementById('example-info-future').innerHTML = alt.text;
     exampleInfoModal.show();
   });
   return btnInfo;
@@ -132,10 +137,6 @@ function showExample(index) {
     buttons.appendChild(btnInfo);
     colKeys.appendChild(buttons);
     row.appendChild(colKeys);
-
-    const colText = document.createElement('div');
-    colText.className = 'col-md example-text';
-    row.appendChild(colText);
 
     document.getElementById('examples-body').appendChild(row);
 

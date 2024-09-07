@@ -12,6 +12,7 @@ export const examples = [
     alternates: [
       {
         id: 1,
+        text: "ខ្មែរ",
         description: {
           en: `
           <p>
@@ -40,6 +41,7 @@ export const examples = [
       },
       {
         id: 2,
+        text: "ខែ្មរ",
         description: { en: `
           <p>
             In this example, the COENG MO subconsonant ្ម has been typed after the vowel ែ.
@@ -54,6 +56,13 @@ export const examples = [
 
           <p>
             Khmer Angkor and the normalizer will both fix this incorrect ordering automatically.
+          </p>
+
+          <p>
+            <b>Important note:</b> The Khmer Busra Test font cannot show a dotted circle for
+            Case #1 issues, because the text rendering engine internally reorders the vowel
+            before it reaches the font. Making this issue visible to the user requires a change
+            to the renderer. This is the only scenario where this problem arises.
           </p>
         `, km: "" },
         keys_nida: [
@@ -85,6 +94,7 @@ export const examples = [
     alternates: [
       {
         id: 1,
+        text: "ស្ត្រី",
         description: { en: `
           <p>
             This example follows the NiDA keying order. That means that the user is
@@ -112,6 +122,7 @@ export const examples = [
       },
       {
         id: 2,
+        text: "ស្រ្តី",
         description: { en: `
           <p>
             In this example, the COENG RO ្រ is being typed before COENG TA ្ត. This
@@ -148,6 +159,7 @@ export const examples = [
       },
       {
         id: 3,
+        text: "ស្ដ្រី",
         description: { en: `
           <p>
             This is one of the most contentious issues: COENG DA ្ដ is being used
@@ -189,6 +201,7 @@ export const examples = [
       },
       {
         id: 4,
+        text: "ស្រ្ដី",
         description: { en: `
           <p>
             In this example, there are two problems:
@@ -242,6 +255,7 @@ export const examples = [
       },
       {
         id: 5,
+        text: "សី្រ្ត",
         description: { en: `
           <p>
             This example illustrates two problems:
@@ -291,6 +305,7 @@ export const examples = [
       },
       {
         id: 6,
+        text: "សី្រ្ដ",
         description: { en: `
           <p>
             This example illustrates <i>three</i> problems!
@@ -363,6 +378,7 @@ export const examples = [
     alternates: [
       {
         id: 1,
+        text: "ស៊ើប",
         description: { en: `
           <p>
             This example follows the NiDA keying order. That means that the user is
@@ -385,6 +401,7 @@ export const examples = [
       },
       {
         id: 2,
+        text: "ស៉ើប",
         description: { en: `
           <p>
             This example uses the wrong consonant shifter, ៉ MUSIKATOAN
@@ -438,6 +455,7 @@ export const examples = [
 
       {
         id: 3,
+        text: "ស៊េីប",
         description: { en: `
           <p>
             In this example, the vowels េ and ី have been typed separately, which on
@@ -473,6 +491,7 @@ export const examples = [
 
       {
         id: 4,
+        text: "សុើប",
         description: { en: `
           <p>
             This is one of the most common typing issues: using
@@ -506,6 +525,7 @@ export const examples = [
 
       {
         id: 5,
+        text: "សេីុប",
         description: { en: `
           <p>
             This example illustrates two problems:
@@ -530,7 +550,7 @@ export const examples = [
           </p>
 
           <p>
-            Khmer Angkor and the normalizer will merge the two vowels េ and ី into ើ,
+            Khmer Angkor and the normalizer will merge the two vowels AE េ and II ី into ើ,
             and convert the U vowel ុ to appropriate shifter (TRISAP ៊ or MUSIKATOAN ៉)
             automatically.
           </p>
@@ -538,16 +558,16 @@ export const examples = [
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: 'េ', key: 'default-K_E' },
-          { cap: 'ុ', key: 'default-K_U' },
           { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: 'ុ', key: 'default-K_U' },
           { cap: 'ប', key: 'default-K_B' },
         ],
         keys_angkor_mobile: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: 'េ', key: 'default-K_E' },
-          { cap: 'ុ', key: 'default-K_U' },
           { cap: 'ិ', key: ['longpress', 'default-K_I'], longpress: true },
           { cap: 'ី', key: ['popup', 'popup-default-K_I+shift'] },
+          { cap: 'ុ', key: 'default-K_U' },
           { cap: 'ប', key: 'default-K_B' },
         ],
       },
@@ -564,6 +584,7 @@ export const examples = [
     alternates: [
       {
         id: 1,
+        text: "",
         description: {
           en: `
           <p>
@@ -584,6 +605,16 @@ export const examples = [
         },
         keys_nida: [
           { cap: 'ញ', key: ['shift', 'shift-K_J'] },
+          { cap: '៉', key: 'default-K_QUOTE+shift' },
+          { cap: 'ាំ', key: ['shift', 'shift-K_A'] },
+        ],
+        keys_nida_desktop: [
+          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
+          { cap: '៉', key: ['shift', 'shift-K_QUOTE'] },
+          { cap: 'ាំ', key: ['shift', 'shift-K_A'] },
+        ],
+        keys_angkor_desktop: [
+          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
           { cap: '៉', key: ['shift', 'shift-K_QUOTE'] },
           { cap: 'ាំ', key: ['shift', 'shift-K_A'] },
         ],
@@ -598,6 +629,7 @@ export const examples = [
 
       {
         id: 2,
+        text: "ញុំា",
         description: {
           en: `
           <p>
