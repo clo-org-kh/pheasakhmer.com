@@ -4,7 +4,8 @@ export const localizedElements = [
   'nav-system-caption', 'nav-example-caption', 'nav-device', 'nav-device-desktop', 'nav-device-phone',
   'help-title', 'help-content', 'help-label-show-help-on-startup', 'help-ok',
   'about-title', 'about-content', 'about-ok',
-  'example-info-title', 'example-info-ok', "example-info-render-title", "example-info-today-text", "example-info-future-text",
+  'example-info-title', 'example-info-ok', "example-info-render-title-today", "example-info-render-title-future",
+  "example-info-today-text", "example-info-future-text",
   "encoding-result-correct", "encoding-result-incorrect",
 ];
 
@@ -170,11 +171,12 @@ export const resources = {
       "example-info-title": "About this example",
       "example-info-ok": "OK",
 
-      "example-info-render-title": "How the Khmer Encoding Structure displays this encoding error",
+      "example-info-render-title-today": "How your device displays this encoding error",
       "example-info-today-text": `
-        This is the result of typing this sequence with today's keyboard, using today's font. Encoding
-        errors may or may not be visible &mdash; depending on your device.
+      This is the result of typing this sequence with today's keyboard, using today's font. Encoding
+      errors may or may not be visible &mdash; depending on your device.
       `,
+      "example-info-render-title-future": "How the Khmer Encoding Structure displays this",
       "example-info-future-text": `
         This is the result if you type this sequence with today's keyboard, and display with
         the Khmer Busra Test future font. Encoding errors will be clearly shown with

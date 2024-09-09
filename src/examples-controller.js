@@ -77,8 +77,14 @@ function addInfoButton(example, alt, keysHTML) {
     document.getElementById('example-info-title').innerHTML = example.text + ', ' + translate(`example-${example.id}`, {interpolation:{escapeValue: false}});
     document.getElementById('example-info-content').innerHTML = translate(`example-${example.id}-alt-${alt.id}`, {interpolation:{escapeValue: false}});
 
-    // only show the render for non-default
-    document.getElementById('example-info-render').style.display = alt.id == 1 || example.id == 'word-khmer' ? 'none' : '';
+    // hide the render for the default example, because it's "correct" already
+    // also hide the render for confusing alternates (word-khmer#2, detect#2)
+    document.getElementById('example-info-render').style.display =
+      alt.id == 1 ||
+      (alt.id == 2 && example.id == 'word-khmer') ||
+      (alt.id == 2 && example.id == 'detect')
+      ? 'none'
+      : '';
     document.getElementById('example-info-today').innerHTML = alt.text;
     document.getElementById('example-info-future').innerHTML = alt.text;
     exampleInfoModal.show();
