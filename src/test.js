@@ -25,8 +25,8 @@ if(!isTouchDevice()) {
 
 keyman.init({
   ui:'button',
-  resources:'/resource/',
-  keyboards:'/keyboards/',
+  resources:'./resource/',
+  keyboards:'./keyboards/',
   attachType:'manual',
   setActiveOnRegister:false
 }).then(function() {
