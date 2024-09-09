@@ -46,7 +46,7 @@ export const resources = {
         <p>
           This website demonstrates the improved
           <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/" target="_blank">Khmer Encoding Structure</a>,
-          using the Khmer Angkor keyboard and Khmer Busra Test font.
+          using the Khmer Angkor keyboard and Busra font.
         </p>
 
         <p>
@@ -124,7 +124,7 @@ export const resources = {
       "about-content": `
         <p>
         This website demonstrates the improved Khmer Encoding Structure,
-        using the Khmer Angkor keyboard and Khmer Busra Test font, and
+        using the Khmer Angkor keyboard and Busra font, and
         compares to existing keyboards and fonts.
         </p>
 
@@ -179,8 +179,7 @@ export const resources = {
       "example-info-render-title-future": "How the Khmer Encoding Structure displays this",
       "example-info-future-text": `
         This is the result if you type this sequence with today's keyboard, and display with
-        the Khmer Busra Test future font. Encoding errors will be clearly shown with
-        dotted circles.
+        the Busra future font. Encoding errors will be clearly shown with dotted circles.
       `,
 
       // descriptions of examples are imported from examples.js

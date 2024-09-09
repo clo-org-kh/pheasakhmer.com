@@ -59,7 +59,7 @@ export const examples = [
           </p>
 
           <p>
-            <b>Important note:</b> The Khmer Busra Test font cannot show a dotted circle for
+            <b>Important note:</b> The Busra font cannot show a dotted circle for
             Case #1 issues, because the text rendering engine internally reorders the vowel
             before it reaches the font. Making this issue visible to the user requires a change
             to the renderer. This is the only scenario where this problem arises.
