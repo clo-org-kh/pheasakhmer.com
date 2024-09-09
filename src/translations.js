@@ -57,7 +57,7 @@ export const resources = {
 
         <ol>
           <li>
-            Start by selecting the Khmer system "today" (Khmer Unicode standard).
+            Start by selecting the Khmer system <b>Today</b> (Khmer Unicode standard).
           </li>
           <li>
             Select an example to try. Each example has multiple key sequences
@@ -66,15 +66,15 @@ export const resources = {
           </li>
           <li>
             Try typing the examples &mdash; either typing them yourself on your
-            keyboard, or by clicking <b><span class="bi-keyboard"></span> Try it</b>. Then try them again with
-            the Future system &mdash; the Khmer Encoding Structure.
+            keyboard, or by clicking <b><span class="bi-keyboard"></span> Try it</b>. Then
+            try them again with the <b>Future</b> system &mdash; the Khmer Encoding Structure.
           </li>
         </ol>
 
         <p>
           Do you know which is the right keying order for each example with the
-          NiDA keyboard? Click the <b><span class="bi-question-octagon"></span> Learn more</b> button next to each key sequence
-          to read a detailed explanation.
+          NiDA keyboard? Click the <b><span class="bi-question-octagon"></span> Learn more</b>
+          button next to each key sequence to read a detailed explanation.
         </p>
 
         <p>
