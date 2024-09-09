@@ -57,10 +57,10 @@ export const resources = {
 
         <ol>
           <li>
-            Start by selecting the Khmer system <b>Today</b> (Khmer Unicode standard).
+            Start by choosing the Khmer system <b>Today</b> (Khmer Unicode standard).
           </li>
           <li>
-            Select an example to try. Each example has multiple key sequences
+            Choose an example to try. Each example has multiple key sequences
             &mdash; but only one of these sequences produces correctly
             encoded text with today's technology.
           </li>
