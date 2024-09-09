@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "serve -n -l 3000 ."
+    "test": "serve -n -l 3000 .",
+    "build": "bash ./build.sh"
   },
   "author": "Marc Durdin",
   "license": "MIT",
