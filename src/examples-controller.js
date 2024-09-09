@@ -12,7 +12,7 @@ function fillExamples(t) {
   examplesDropdown.removeAll();
   for(let i = 0; i < examples.length; i++) {
     const example = examples[i];
-    // example.alternates = arrayShuffle(example.alternates);
+    example.alternates = arrayShuffle(example.alternates);
     example.description = t('example-'+example.id);
     examplesDropdown.add('#example'+i.toString(), example.text + ' ' + example.description);
   }
