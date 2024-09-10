@@ -1,4 +1,4 @@
-import { khnormal } from "./lib/khmer-normalizer/khnormal.js";
+import { khnormal } from "../lib/khmer-normalizer/khnormal.js";
 
 import { ta1 } from './text-area.js';
 

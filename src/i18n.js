@@ -1,4 +1,4 @@
-import i18next from './lib/i18next/i18next.js';
+import i18next from '../lib/i18next/i18next.js';
 
 import { localizedElements, resources } from './translations.js';
 

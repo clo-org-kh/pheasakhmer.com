@@ -1,4 +1,4 @@
-import arrayShuffle from './lib/array-shuffle/index.js';
+import arrayShuffle from '../lib/array-shuffle/index.js';
 
 import { register, translate } from './i18n.js';
 import { animateKeystrokes } from './animate.js';
