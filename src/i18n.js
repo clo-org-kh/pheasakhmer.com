@@ -3,14 +3,12 @@ import i18next from '../lib/i18next/i18next.js';
 import { localizedElements, resources } from './translations.js';
 
 const startupLanguage = window.sessionStorage.getItem('current-language') ?? 'km';
-
-await i18next.init({
-  lng: startupLanguage,
-  // debug: true,
-  resources
-});
-
 const callbacks = [];
+const btnKhmer = document.getElementById('btn-language-khmer');
+const btnEnglish = document.getElementById('btn-language-english');
+
+btnKhmer.addEventListener('click', () => selectLanguage('km'));
+btnEnglish.addEventListener('click', () => selectLanguage('en'));
 
 // initialized and ready to go!
 // i18next is already initialized, because the translation resources where passed via init function
@@ -28,12 +26,6 @@ function localize() {
 }
 
 export function translate(id, params) { return i18next.t(id, params) }
-
-const btnKhmer = document.getElementById('btn-language-khmer');
-const btnEnglish = document.getElementById('btn-language-english');
-
-btnKhmer.addEventListener('click', () => selectLanguage('km'));
-btnEnglish.addEventListener('click', () => selectLanguage('en'));
 
 export function currentLanguage() {
   return i18next.language;
@@ -55,9 +47,20 @@ export function selectLanguage(id) {
   if(menuEnglish) menuEnglish.checked = id == 'en';
 }
 
-window.addEventListener('load', () => selectLanguage(startupLanguage));
-
 export function register(callback) {
   callbacks.push(callback);
   callback(i18next.t);
 }
+
+await i18next.init({
+  lng: startupLanguage,
+  // debug: true,
+  resources
+});
+
+if (document.readyState === 'complete') {
+  selectLanguage(startupLanguage);
+} else {
+  window.addEventListener('load', () => selectLanguage(startupLanguage));
+}
+

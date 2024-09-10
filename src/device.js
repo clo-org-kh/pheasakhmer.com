@@ -17,7 +17,13 @@ export let currentDevice = null;
 
 let deviceDropdown = null;
 
-window.addEventListener('load', function() {
+if (document.readyState === 'complete') {
+  loadDevices();
+} else {
+  window.addEventListener('load', loadDevices);
+}
+
+function loadDevices() {
   if(!isTouchDevice()) {
     document.body.classList.add('desktop-device');
     deviceDropdown = new DropdownMenu('device');
@@ -34,8 +40,7 @@ window.addEventListener('load', function() {
   } else {
     document.body.classList.add('touch-device');
   }
-
-});
+}
 
 export function isTouchDevice() {
   return keyman.util.isTouchDevice();
