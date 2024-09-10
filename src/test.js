@@ -16,6 +16,7 @@ function enableControls(enable) {
   });
 }
 
+let newOSK = null;
 let keymanInitialized = false;
 enableControls(false);
 
@@ -28,23 +29,29 @@ keyman.init({
   resources:'.',
   keyboards:'../keyboards/',
   attachType:'manual',
-  setActiveOnRegister:false
+  setActiveOnRegister:false,
+  showAlerts: false,
 }).then(function() {
+  keyman.osk = null;
   keyman.attachToControl(ta1);
   enableControls(true);
   keymanInitialized = true;
 });
 
+if (document.readyState === 'complete') {
+  doLoad();
+} else {
+  window.addEventListener('load', doLoad);
+}
+
 /* Initialization */
 
-window.addEventListener('load', function() {
+function doLoad() {
   window.setTimeout(
     function () {
       focusTextArea();
     }, 10
   );
-
-
 
   setOSK();
 
@@ -65,7 +72,7 @@ window.addEventListener('load', function() {
   showHelpOnStartup.addEventListener('click', function() {
     window.sessionStorage.setItem('show-help-on-startup', showHelpOnStartup.checked ? '1' : '');
   });
-});
+}
 
 /* Load keyboards */
 
@@ -75,8 +82,6 @@ keyman.addKeyboards(
 });
 
 /* OSK */
-
-let newOSK = null;
 
 export function setOSK() {
   if(isTouchDevice()) {
