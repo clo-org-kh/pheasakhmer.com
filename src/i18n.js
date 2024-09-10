@@ -1,4 +1,5 @@
-import i18next from 'i18next';
+import i18next from './lib/i18next/i18next.js';
+
 import { localizedElements, resources } from './translations.js';
 
 const startupLanguage = window.sessionStorage.getItem('current-language') ?? 'km';

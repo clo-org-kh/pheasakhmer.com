@@ -1,5 +1,6 @@
+import arrayShuffle from './lib/array-shuffle/index.js';
+
 import { register, translate } from './i18n.js';
-import arrayShuffle from 'array-shuffle';
 import { animateKeystrokes } from './animate.js';
 import { DropdownMenu } from './dropdown-menu.js';
 import { focusTextArea } from './text-area.js';

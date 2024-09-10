@@ -1,4 +1,5 @@
-import { khnormal } from "khmer-normalizer";
+import { khnormal } from "./lib/khmer-normalizer/khnormal.js";
+
 import { ta1 } from './text-area.js';
 
 function updateNormalizationState() {
