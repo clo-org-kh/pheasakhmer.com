@@ -32,7 +32,9 @@ keyman.init({
   setActiveOnRegister:false,
   showAlerts: false,
 }).then(function() {
-  keyman.osk = null;
+  if(!isTouchDevice()) {
+    keyman.osk = null;
+  }
   keyman.attachToControl(ta1);
   enableControls(true);
   keymanInitialized = true;
