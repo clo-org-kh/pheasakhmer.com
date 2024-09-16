@@ -21,6 +21,10 @@ export const examples = [
           </p>
         `,
           km: `
+          <p>
+            ឧទាហរណ៍មួយនេះត្រូវបានសរសេរទៅតាមស្តង់ដារខ្មែរយូនីកូដ មានន័យថា 
+            អ្នកប្រើប្រាស់បានសរសេរដូចទៅនឹងរបៀបដែលអក្សរខ្មែរត្រូវបាន encoded។
+          </p>
         `,
         },
         keys_nida: [
@@ -64,7 +68,23 @@ export const examples = [
             before it reaches the font. Making this issue visible to the user requires a change
             to the renderer. This is the only scenario where this problem arises.
           </p>
-        `, km: "" },
+        `,
+          km: `
+          <p>
+            នៅក្នុងឧទាហរណ៍មួយនេះ  ្ម ត្រូវបានសរសេរបន្ទាប់ពី ​ែ។ 
+            តាមរយៈការអាន របៀបសរសេរនេះមើលទៅហាក់បីដូចជាត្រឹមត្រូវ ព្រោះក្តារចុច NiDA និង ស្តង់ដារខ្មែរយូនីកូដ
+            មិនអាចបង្ហាញអោយយើងដឹងថាវាខុសនោះទេ។
+          </p>
+
+          <p>
+            នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០១ </b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer អាចកែតម្រូវរបៀបសរសេរមិនត្រឹមត្រូវនេះបានភ្លាមៗ។ 
+          </p>
+        `,
+        },
         keys_nida: [
           { cap: 'ខ', key: 'default-K_X' },
           { cap: ['Shift', 'ែ'], key: ['shift', 'shift-K_E'] },
@@ -100,7 +120,12 @@ export const examples = [
             This example follows the NiDA keying order. That means that the user is
             typing in exactly the same order as the encoded order.
           </p>
-        `, km: ""
+        `, km: `
+          <p>
+            ឧទាហរណ៍មួយនេះត្រូវបានសរសេរទៅតាមស្តង់ដារខ្មែរយូនីកូដ មានន័យថា 
+            អ្នកប្រើប្រាស់បានសរសេរដូចទៅនឹងរបៀបដែលអក្សរខ្មែរត្រូវបាន encoded។
+          </p>
+        `,
         },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
@@ -138,7 +163,22 @@ export const examples = [
           <p>
             Khmer Angkor and the normalizer will both fix this incorrect ordering automatically.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            នៅក្នុងឧទាហរណ៍នេះ  ្រ ត្រូវបានសរសេរមុន  ្ត។ នេះមិនត្រឹមត្រូវទៅតាមរបៀបសរសេររបស់ជើងព្យញ្ជនៈនោះទេ។ 
+            ប៉ុន្តែនៅលើឧបករណ៍ជាច្រើន ការសរសេរមួយនេះបែរជាត្រូវបានបង្ហាញត្រឹមត្រូវទៅវិញ។
+          </p>  
+
+          <p>
+            នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០២ </b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer អាចកែតម្រូវរបៀបសរសេរមិនត្រឹមត្រូវនេះបានភ្លាមៗ។ 
+          </p>
+          
+        `,
+        },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '្', key: 'default-K_J' },
@@ -180,7 +220,26 @@ export const examples = [
           <p>
             Khmer Angkor and the normalizer change COENG DA ្ដ to COENG TA ្ត automatically.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            ជើង ដ ត្រូវបានភាគច្រើនប្រើជំនួសជើង ត ដោយសារតែរូបរាងដូចគ្នា ធ្វើអោយមានភាពច្របូកច្របល់ហើយក្លាយជាបញ្ហាដ៏ធំមួយ។ 
+          </p>
+
+          <p>
+            នៅសម័យខ្មែរបុរាណ និងខ្មែរកណ្តាល ជើង ដ មានរូបរាងខុសពីបច្ចុប្បន្ន។ ​សម្រាប់ព័តមានបន្ថែម អាចចូលទៅកាន់
+            <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank"> អត្ថបទស្រាវជ្រាវ</a>
+             នៅផ្នែក<i>ជើង ត និង ជើង ដ</i>។
+          </p>
+
+          <p>
+            នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០៨ </b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer អាចកែតម្រូវជើង ដ អោយទៅជាជើង ​ត បានភ្លាមៗ។ 
+          </p>
+        `,
+        },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '្', key: 'default-K_J' },
@@ -229,12 +288,40 @@ export const examples = [
 
           <p>
             This is an example of <b>Case #2</b> and <b>Case #8</b> in <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">the research paper</a>.
-          </p>
+          </p> 
 
           <p>
             Khmer Angkor and the normalizer will both fix these two problems automatically.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+              ក្នុងឧទាហរណ៍នេះ  មានបញ្ហា ២គឺ៖
+            </p>
+
+            <ol>
+              <li>
+                ជើង ដ ត្រូវបានភាគច្រើនប្រើជំនួសជើង ត ដោយសារតែរូបរាងដូចគ្នា ធ្វើអោយមានភាពច្របូកច្របល់ហើយក្លាយជាបញ្ហាដ៏ធំមួយ។ 
+              </li>
+              <li>
+                 ្រ ត្រូវបានសរសេរមុន  ្ត។ នេះមិនត្រឹមត្រូវទៅតាមរបៀបសរសេររបស់ជើងព្យញ្ជនៈនោះទេ។ 
+                ប៉ុន្តែនៅលើឧបករណ៍ជាច្រើន ការសរសេរមួយនេះបែរជាត្រូវបានបង្ហាញត្រឹមត្រូវទៅវិញ។
+              </li>
+            </ol>
+
+            <p>
+              នៅសម័យខ្មែរបុរាណ និងខ្មែរកណ្តាល ជើង ដ មានរូបរាងខុសពីបច្ចុប្បន្ន។ ​សម្រាប់ព័តមានបន្ថែម អាចចូលទៅកាន់
+              <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank"> អត្ថបទស្រាវជ្រាវ</a>
+              នៅផ្នែក<i>ជើង ត និង ជើង ដ</i>។
+            </p>
+
+            <p>
+              នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០២</b>  និង <b>ករណីទី ០៨</b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+            </p>
+
+            <p>
+              ក្តារចុចខ្មែរអង្គរ និង normalizer អាចកែតម្រូវបញ្ហានេះបានភ្លាមៗ។ 
+            </p>
+        `, },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '្', key: 'default-K_J' },
@@ -284,7 +371,33 @@ export const examples = [
           <p>
             Khmer Angkor and the normalizer will both fix this incorrect ordering automatically.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            ឧទារហណ៍នេះបង្ហាញពីបញ្ហា ២ផ្សេងគ្នា៖
+          </p>
+
+          <ul>
+            <li>
+              ជើង ត និង ជើង រ ត្រូវបានសរសេរបន្ទាប់ពីស្រៈ  ី ។ នេះមិនសមស្របទៅតាមលំដាប់អក្សរនៅក្នុងភាសាវិទ្យានោះទេ។
+            </li>
+            <li>
+               ្រ ត្រូវបានសរសេរមុន  ្ត។ នេះមិនត្រឹមត្រូវទៅតាមរបៀបសរសេររបស់ជើងព្យញ្ជនៈនោះទេ។ 
+            </li>
+          </ul>
+
+          <p>
+            ឧបករណ៍ជាច្រើន​បង្ហាញរបៀបសរសេរខុសមួយនេះដូចនឹងពាក្យត្រូវ ធ្វើអោយយើងមិនអាចកត់សម្គាល់កំហុសបាន។
+          </p>
+
+          <p>
+           នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០១</b>  និង <b>ករណីទី ០២</b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer អាចកែតម្រូវរបៀបសរសេរខុសនេះបានភ្លាមៗ។ 
+          </p>
+        `, 
+        },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
@@ -346,7 +459,41 @@ export const examples = [
             Khmer Angkor and the normalizer will both fix the ordering, and replace
             COENG DA ្ដ with COENG TA ្ត automatically.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            ក្នុងឧទាហរណ៍នេះបង្ហាញពីបញ្ហា <i>ចំនួនបី</i>!
+          </p>
+
+          <ul>
+            <li>
+              ជើង ដ ត្រូវបានភាគច្រើនប្រើជំនួសជើង ត ដោយសារតែរូបរាងដូចគ្នា ធ្វើអោយមានភាពច្របូកច្របល់ហើយក្លាយជាបញ្ហាដ៏ធំមួយ។ 
+            </li>
+            <li>
+              ជើង ត និង ជើង រ ត្រូវបានសរសេរបន្ទាប់ពីស្រៈ  ី ។ នេះមិនសមស្របទៅតាមលំដាប់អក្សរនៅក្នុងភាសាវិទ្យានោះទេ។
+            </li>
+            <li>
+              ្រ ត្រូវបានសរសេរមុន  ្ត។ នេះមិនត្រឹមត្រូវទៅតាមរបៀបសរសេររបស់ជើងព្យញ្ជនៈនោះទេ។ 
+            </li>
+          </ul>
+
+          <p>
+           ឧបករណ៍ជាច្រើន​បង្ហាញរបៀបសរសេរខុសនេះដូចនឹងពាក្យត្រូវ ធ្វើអោយយើងមិនអាចកត់សម្គាល់កំហុសបាន។
+          </p>
+
+          <p>
+            នៅសម័យខ្មែរបុរាណ និងខ្មែរកណ្តាល ជើង ដ មានរូបរាងខុសពីបច្ចុប្បន្ន។ ​សម្រាប់ព័តមានបន្ថែម អាចចូលទៅកាន់
+            <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank"> អត្ថបទស្រាវជ្រាវ</a>
+            នៅផ្នែក<i>ជើង ត និង ជើង ដ</i>។
+          </p>
+
+          <p>
+            នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០១</b>  <b>ករណីទី ០២</b> និង <b>ករណីទី ០៨</b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer អាចកែតម្រូវរបៀបសរសេរមិនត្រឹមត្រូវ និង កែតម្រូវជើង ដ អោយទៅជាជើង ​ត បានភ្លាមៗ។ 
+          </p>
+        `, },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
@@ -384,7 +531,12 @@ export const examples = [
             This example follows the NiDA keying order. That means that the user is
             typing in exactly the same order as the encoded order.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            ឧទាហរណ៍មួយនេះត្រូវបានសរសេរទៅតាមស្តង់ដារខ្មែរយូនីកូដ មានន័យថា 
+            អ្នកប្រើប្រាស់បានសរសេរដូចទៅនឹងរបៀបដែលអក្សរខ្មែរត្រូវបាន encoded។
+          </p>
+        `, },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '៊', key: 'default-K_SLASH' },
@@ -425,7 +577,26 @@ export const examples = [
             Khmer Angkor and the normalizer will correct the shifter automatically
             when it is used in the down-shifted form.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            ឧទាហរណ៍នេះបានប្រើតួអក្សរប្តូរព្យព្ជានៈមិនត្រឹមត្រូវ ដោយប្រើមូសិកទន្តជំនួសអោយត្រីសព្ទនៅលើអក្សរ​ ស ទៅវិញ។ 
+            នេះមិនមែនជាកំហុសនៃ encoding នោះទេ តែជាការប្រើខុសទៅនឹងក្បួននៃការសរសេរភាសាខ្មែរព្រោះ អក្សរ​ ស ជាអឃោសៈ 
+            មិនអាចប្រើជាមួយមូសិកទន្តបានជាដាច់ខាត។  ហេតុនេះហើយបានជា
+            Khmer Encoding Structure នឹងអនុវត្តការប្រើប្រាស់តែត្រីសព្ទប៉ុណ្ណោះក្នុងលក្ខខណ្ឌមួយនេះ។ 
+          </p>
+
+          <p>
+            នៅលើឧបករណ៍ជាច្រើន មូសិកទន្តត្រូវបានប្តូរទៅជាស្រៈ  ុ ពេលប្រើជាមួយអក្សរ ស ដែលធ្វើឱ្យមានការយល់ច្រឡំ។
+          </p>
+
+          <p>
+           នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០៤</b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer អាចធ្វើការកែតម្រូវតួអក្សរប្តូរព្យព្ជានៈអោយបានត្រឹមត្រូវភ្លាមៗ។ 
+          </p>
+        `, },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '៉', key: 'default-K_QUOTE+shift' },
@@ -470,7 +641,20 @@ export const examples = [
           <p>
             Khmer Angkor and the normalizer will merge the two vowels េ and ី into ើ automatically.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            ក្នុងឧទាហរណ៍នេះ ស្រៈ  េ និង  ី ត្រូវបានសរសេរផ្សេងពីគ្នា តែនៅលើឧបករណ៍ជាច្រើនបែរជាបង្ហាញចេញជាស្រៈ  ើ។
+            ខ្មែរយូនីកូដត្រូវការស្រៈតែមួយប៉ុណ្ណោះក្នុងមួយព្យាង្គ។
+          </p>
+
+          <p>
+            នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០៧</b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer នឹងផ្សំបញ្ចូលស្រៈ  េ និង  ី អោយទៅជាស្រៈ  ើ ដោយស្វ័យប្រវត្តិ។
+          </p>
+        `, },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '៊', key: 'default-K_SLASH' },
@@ -508,7 +692,21 @@ export const examples = [
             Khmer Angkor and the normalizer will convert the U vowel ុ to
             appropriate shifter (TRISAP ៊ or MUSIKATOAN ៉) automatically.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            ការប្រើប្រាស់ស្រៈ  ុ ជំនួសអោយត្រីសព្ទ ក្លាយជាបញ្ហាទូទៅបំផុតហើយមានការភាន់ច្រឡំច្រើន ដោយសារតែតួអក្សរប្តូរព្យព្ជានៈមួយនេះ
+            ប្រែជាស្រៈពេលស្ថិតនៅខាងក្រោមព្យញ្ជនៈ។
+          </p>
+
+          <p>
+            នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០៤</b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer នឹងបម្លែងស្រៈ  ុ អោយទៅជាតួអក្សរប្តូរព្យព្ជានៈ
+            ដែលត្រឹមត្រូវ(ត្រីសព្ទ ឬ មូសិកទន្ត)ដោយស្វ័យប្រវត្តិ។
+          </p>
+        `, },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: 'ុ', key: 'default-K_U' },
@@ -554,7 +752,31 @@ export const examples = [
             and convert the U vowel ុ to appropriate shifter (TRISAP ៊ or MUSIKATOAN ៉)
             automatically.
           </p>
-        `, km: "" },
+        `, km: `
+          <p>
+            ឧទាហរណ៍នេះបង្ហាញពីបញ្ហាចំនួនពីរ៖
+          </p>
+
+          <ul>
+            <li>
+              ការប្រើប្រាស់ស្រៈ  ុ ជំនួសអោយត្រីសព្ទ ក្លាយជាបញ្ហាទូទៅបំផុតហើយមានការភាន់ច្រឡំច្រើន ដោយសារតែតួអក្សរប្តូរព្យព្ជានៈមួយនេះ
+              ប្រែជាស្រៈពេលស្ថិតនៅខាងក្រោមព្យញ្ជនៈ។
+            </li>
+            <li>
+              ក្នុងឧទាហរណ៍នេះ ស្រៈ  េ និង  ី ត្រូវបានសរសេរផ្សេងពីគ្នា តែនៅលើឧបករណ៍ជាច្រើនបែរជាបង្ហាញចេញជាស្រៈ  ើ។
+              ខ្មែរយូនីកូដត្រូវការស្រៈតែមួយប៉ុណ្ណោះក្នុងមួយព្យាង្គ។
+            </li>
+          </ul>
+
+          <p>
+            នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០៤</b> និង <b>ករណីទី ០៧</b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer នឹងផ្សំបញ្ចូលស្រៈ  េ និង  ី អោយទៅជាស្រៈ  ើ ហើយ
+            នឹងបម្លែងស្រៈ  ុ អោយទៅជាតួអក្សរប្តូរព្យព្ជានៈដែលត្រឹមត្រូវ(ត្រីសព្ទ ឬ មូសិកទន្ត) ដោយស្វ័យប្រវត្តិ។
+          </p>
+        `, },
         keys_nida: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: 'េ', key: 'default-K_E' },
@@ -601,6 +823,15 @@ export const examples = [
           </p>
         `,
           km: `
+          <p>
+            ឧទាហរណ៍មួយនេះត្រូវបានសរសេរទៅតាមស្តង់ដារខ្មែរយូនីកូដ មានន័យថា 
+            អ្នកប្រើប្រាស់បានសរសេរដូចទៅនឹងរបៀបដែលអក្សរខ្មែរត្រូវបាន encoded។
+          </p>
+          <p>
+            <b>ចំណាំ៖</b> នៅក្នុងកម្មវិធី iOS និង macOS ​មានការបង្ហាញមូសិកទន្តនៅលើព្យព្ជានៈ ញ ជំនួសអោយខាងក្រោមទៅវិញ។
+            កំហុសនេះធ្វើអោយមានការភាន់ច្រឡំជាខ្លាំង ហើយត្រូវបានគេរាយការណ៍ទៅ Apple ដើម្បីរកដំណោះស្រាយ (FB5761346) ។
+            <a href="https://marc.durdin.net/2017/03/when-nyam-meets-nyam/" target="_blank">ព័ត៌មានលម្អិតបន្ថែម (2017)</a>។
+          </p>
         `,
         },
         keys_nida: [
@@ -681,6 +912,45 @@ export const examples = [
           </p>
         `,
           km: `
+          <p>
+            ឧទាហរណ៍នេះបង្ហាញពីបញ្ហាទូទៅពីរ ដែលកើតឡើងពីការសរសេរអក្សរតាមពាក្យដែលមើលឃើញ៖
+          </p>
+
+          <ul>
+            <li>
+              ការប្រើប្រាស់ស្រៈ  ុ ជំនួសអោយមូសិកទន្ត ក្លាយជាបញ្ហាទូទៅបំផុតហើយមានការភាន់ច្រឡំច្រើន ដោយសារតែតួអក្សរប្តូរព្យព្ជានៈមួយនេះ
+              ប្រែជាស្រៈពេលស្ថិតនៅខាងក្រោមព្យញ្ជនៈ។
+            </li>
+            <li>
+              សញ្ញានិគ្គហីតត្រូវបានសរសេរមុនស្រៈ  ា ។
+            </li>
+          </ul>
+
+          <p>
+            នៅលើឧបករណ៍ភាគច្រើន ឧទាហរណ៍នេះមើលទៅដូចជាត្រឹមត្រូវ។ សញ្ញានិគ្គហីត ត្រូវបានបង្ហាញខិតទៅ
+            ខាង​ឆ្វេង​នៃ​ស្រៈ  ា បន្តិច ប៉ុន្តែ​ការខុសប្លែកនេះមិនងាយត្រូវបានគេមើលឃើញ។
+          </p>
+
+          <p>
+            អក្សរបីតួរដំបូងនៃឧទាហរណ៍នេះគឺជារបៀបសរសេរត្រឹមត្រូវសម្រាប់ពាក្យ ញុំ​ 
+            (ដែលមិនមែនជាពាក្យខ្មែរទេ ប៉ុន្តែរបៀបសរសេរត្រូវតាមក្បួនដូចគ្នានឹង ឧទាហរណ៍. ពាក្យ កុំ )។
+            ភាពស្រដៀងគ្នានេះគឺជាហេតុផលមួយទៀតដែលធ្វើអោយមានការងាយយល់ច្រឡំ។
+          </p>
+
+          <p>
+             <b>ចំណាំ៖</b> នៅក្នុងកម្មវិធី iOS និង macOS ​មានការបង្ហាញមូសិកទន្តនៅលើព្យព្ជានៈ ញ ជំនួសអោយខាងក្រោមទៅវិញ។
+            កំហុសនេះធ្វើអោយមានការភាន់ច្រឡំជាខ្លាំង ហើយត្រូវបានគេរាយការណ៍ទៅ Apple ដើម្បីរកដំណោះស្រាយ (FB5761346) ។
+            <a href="https://marc.durdin.net/2017/03/when-nyam-meets-nyam/" target="_blank">ព័ត៌មានលម្អិតបន្ថែម (2017)</a>។
+          </p>
+
+          <p>
+           នេះគឺជាឧទាហណ៍នៃ <b>ករណីទី ០៤</b> និង <b>ករណីទី ០៥</b> នៅក្នុង <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវ</a>។
+          </p>
+
+          <p>
+            ក្តារចុចខ្មែរអង្គរ និង normalizer នឹង​តម្រៀប​  ា  និង  ំ ឡើងវិញ ហើយ
+            នឹងបម្លែងស្រៈ  ុ អោយទៅជាតួអក្សរប្តូរព្យព្ជានៈដែលត្រឹមត្រូវ(មូសិកទន្ត) ដោយស្វ័យប្រវត្តិ។
+          </p>
         `,
         },
         keys_nida: [

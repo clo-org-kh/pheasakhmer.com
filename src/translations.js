@@ -188,8 +188,171 @@ export const resources = {
   },
   km: {
     translation: {
-      "help-title": "សួស្តី",
-      "menu-install-keyboard": "សួស្តី Khmer Angkor",
+
+      // Page title
+      "title": "ភាសាខ្មែរ.com -- Khmer Encoding Structure",
+
+      // Nav
+
+      "nav-system-caption": "ជ្រើសរើសប្រព័ន្ធក្តារចុច:",
+      "nav-example-caption": "ជ្រើសរើសឧទាហរណ៍:",
+      "nav-device": "ឧបករណ៍",
+      "nav-device-desktop": "ប្រព័ន្ធប្រតិបត្តិការរបស់កុំព្យូទ័រ",
+      "nav-device-phone": "ឧបករណ៍ទូរស័ព្ទ",
+
+      // Systems
+
+      "system-today": "បច្ចុប្បន្នភាព",
+      "system-today-long": "បច្ចុប្បន្នភាព: ខ្មែរយូនីកូដ",
+      "system-future": "អនាគតកាល",
+      "system-future-long": "អនាគតកាល: Khmer Encoding Structure",
+
+      // Various
+
+      "text-placeholder": "③ សូមសរសេរនៅទីនេះ",
+      "encoding-result-correct": "✅ អក្សរសរសេរបានត្រឹមត្រូវ",
+      "encoding-result-incorrect": "❌ អក្សរសរសេរមិនបានត្រឹមត្រូវ ",
+
+      // Help / Welcome dialog
+
+      "help-title": "ការបង្ហាញសាកល្បងនៃ Khmer Encoding Structure",
+      "help-label-show-help-on-startup": "បង្ហាញទំព័រនេះពេលចាប់ផ្តើមដំបូង",
+      "help-ok": "យល់ព្រម",
+      "help-content": `
+        <p>
+          គេហទំព័រនេះបង្ហាញពីការធ្វើបច្ចុប្បន្នភាពរបស់
+          <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/" target="_blank">Khmer Encoding Structure</a>,
+          ដោយប្រើក្តារចុចខ្មែរអង្គរ និងពុម្ពអក្សរ Busra ។
+        </p>
+
+        <p>
+          មុននឹងធ្វើការចាប់ផ្តើម អ្នកអាចចូលទៅមើលឧទាហរណ៍ពាក្យខ្មែរពិបាកៗមួយចំនួន។ 
+          យើងបានយកឧទាហរណ៍នោះទៅប្រៀបធៀបលើក្តារចុចបច្ចុប្បន្ន NiDA ដែលប្រើប្រាស់ស្តង់ដារខ្មែរយូនីកូដ និង
+          ក្តារចុចខ្មែរអង្គរដែលពឹងផ្អែកលើបច្ចេកទេសថ្មីគឺ Khmer Encoding Structure។
+        </p>
+
+        <ol>
+          <li>
+            ចាប់ផ្តើមដោយជ្រើសរើសប្រព័ន្ធក្តារចុច <b>បច្ចុប្បន្នភាព</b> (ស្តង់ដារខ្មែរយូនីកូដ)។
+          </li>
+          <li>
+            ជ្រើសរើសឧទាហរណ៍ដើម្បីសាកល្បង។ ឧទាហរណ៍នីមួយៗមានរបៀបរៀបព្យញ្ជនៈខុសៗគ្នា &mdash;
+            ប៉ុន្តែមានរបៀបសរសេរតែមួយគត់ដែលត្រឹមត្រូវទៅតាមស្តង់ដារខ្មែរយូនីកូដ។
+          </li>
+          <li>
+            សាកល្បងសរសេរតាមឧទាហរណ៍។ អ្នកអាចសរសេរដោយខ្លួនឯង ឬចុចលើប៊ូតុង
+            <b><span class="bi-keyboard"></span> សាកល្បងវា</b>។ បន្ទាប់មកសាកល្បងតេស្ត
+            ឧទាហរណ៍នេះម្តងទៀតជាមួយនឹងប្រព័ន្ធក្តារចុច ​<b>អនាគតកាល</b> (the Khmer Encoding Structure)។
+          </li>
+        </ol>
+
+        <p>
+          តើអ្នកដឹងពីរបៀបសរសេរអក្សរខ្មែរអោយត្រឹមត្រូវនៅលើក្តារចុច NiDA ឬទេ? 
+          ចុចលើប៊ូតុង ​<b><span class="bi-question-octagon"></span> ស្វែងយល់បន្ថែម</b>
+          ដើម្បីអានការពន្យល់លម្អិត។
+        </p>
+
+        <p>
+          ជាមួយនឹងក្តារចុចខ្មែរអង្គរដែលប្រើប្រាស់ Khmer Encoding Structure 
+          ការសសេរគ្រប់ទម្រង់ទាំងអស់នឹងដំណើរការ។ អ្នកលែងត្រូវការចាំរបៀបសរសេរទៀតហើយ​។
+          សាកល្បងឥឡូវនេះ!
+        </p>
+
+        <p>
+          អ្នកអាចសរសេរពាក្យខ្មែររបៀបណាក៏បាន។ Khmer Encoding Structure នឹងបម្លែងពាក្យនោះអោយត្រឹមត្រូវទាំងអស់!
+        </p>
+
+        <p>
+        ស្វែងយល់បន្ថែម:
+        </p>
+
+        <ul>
+          <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/">ទំព័រដើមនៃ Khmer Encoding Structure</a></li>
+          <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf">អត្ថបទស្រាវជ្រាវនៃ Khmer Encoding Structure</a></li>
+          <li><span class="bi-journal-text"></span> <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវនៃ Spoof-Vulnerable Rendering in Khmer Unicode Implementation</a></li>
+          <li><span class="bi-github"></span> <a href="https://github.com/clo-org-kh/pheasakhmer.com">ប្រភព GitHub សម្រាប់គេហទំព័រនេះ</a></li>
+          <li><span class="bi-envelope-at"></span> <a href="mailto:camlingorg@gmail.com">ទាក់ទងមកពួកយើង</a></li>
+        </ul>
+
+        <p>&copy; ២០២៤ អង្គការភាសាវិទ្យាកម្ពុជា</p>
+
+        <p><img src="clo-big.png" style="width: 100%" alt="Cambodia Linguistics Organization logo"></p>
+
+        <p style="text-align: center">
+        <a href="https://www.sil.org" target="_blank"><img src="sil.png" style="width:30%" alt="SIL Global"></a>
+        <a href="https://npic.edu.kh" target="_blank"><img src="npic.png" style="width:30%" alt="National Polytechnic Institute of Cambodia"></a>
+        <a href="https://www.cadt.edu.kh" target="_blank"><img src="cadt.png" style="width:30%" alt="Cambodia Academy of Digital Technology"></a>
+        </p>
+
+        <p style="text-align: center">
+        <a href="https://keyman.com" target="_blank"><img src="powered-by-keyman-280x36.png" alt="Powered by Keyman"></a>
+        </p>
+      `,
+
+      // About dialog
+
+      "about-title": "អំពីគេហទំព័រ Khmer Encoding Structure",
+      "about-ok": "យល់ព្រម",
+      "about-content": `
+        <p>
+        គេហទំព័រនេះបង្ហាញពីការធ្វើបច្ចុប្បន្នភាពរបស់  Khmer Encoding Structure ដែលប្រើប្រាស់
+        ក្តារចុចខ្មែរអង្គរ និងពុម្ពអក្សរ Busra ហើយប្រៀបធៀបជាមួយក្តារចុចនិងពុម្ពអក្សរដែលកំពុងប្រើប្រាស់បច្ចុប្បន្ន។
+        </p>
+
+        <ul>
+          <li><span class="bi-globe-asia-australia"></span> <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/" target="_blank">ទំព័រដើមនៃ Khmer Encoding Structure</a></li>
+          <li><span class="bi-file-earmark-pdf"></span> <a href="https://github.com/sillsdev/khmer-character-specification/blob/master/encoding_structure/Khmer%20Encoding%20Structure.pdf" target="_blank">អត្ថបទស្រាវជ្រាវនៃ Khmer Encoding Structure</a></li>
+          <li><span class="bi-journal-text"></span> <a href="https://lt4all.elra.info/proceedings/lt4all2019/pdf/2019.lt4all-1.35.pdf" target="_blank">ឯកសារស្រាវជ្រាវនៃ Spoof-Vulnerable Rendering in Khmer Unicode Implementation</a></li>
+          <li><span class="bi-github"></span> <a href="https://github.com/clo-org-kh/pheasakhmer.com" target="_blank">ប្រភព GitHub សម្រាប់គេហទំព័រនេះ</a></li>
+          <li><span class="bi-envelope-at"></span> <a href="mailto:camlingorg@gmail.com">ទាក់ទងមកពួកយើង</a></li>
+        </ul>
+
+        <p>&copy; ២០២៤ អង្គការភាសាវិទ្យាកម្ពុជា</p>
+
+        <p><img src="clo-big.png" style="width: 100%" alt="Cambodia Linguistics Organization logo"></p>
+
+        <p style="text-align: center">
+        <a href="https://www.sil.org" target="_blank"><img src="sil.png" style="width:30%" alt="SIL Global"></a>
+        <a href="https://npic.edu.kh" target="_blank"><img src="npic.png" style="width:30%" alt="National Polytechnic Institute of Cambodia"></a>
+        <a href="https://www.cadt.edu.kh" target="_blank"><img src="cadt.png" style="width:30%" alt="Cambodia Academy of Digital Technology"></a>
+        </p>
+
+        <p style="text-align: center">
+        <a href="https://keyman.com" target="_blank"><img src="powered-by-keyman-280x36.png" alt="Powered by Keyman"></a>
+        </p>
+
+        <p>
+        ប្រសិនបើអ្នកជួបប្រទះបញ្ហាណាមួយនៅលើគេហទំព័រនេះ សូមធ្វើការរាយការណ៍នៅលើ
+        <span class="bi-github"></span> <a href="https://github.com/clo-org-kh/pheasakhmer.com/issues">កម្មវិធីតាមដានបញ្ហា</a>។
+        </p>
+      `,
+
+      // Hamburger menu
+
+      "menu-install-keyboard": "ដំឡើងក្តារចុចខ្មែរអង្គរ",
+      "menu-help": "ជំនួយក្នុងការប្រើប្រាស់គេហទំព័រ",
+      "menu-about": "អំពីគេហទំព័រនេះ",
+
+      
+      // Examples
+
+      "example-try-it": "សាកល្បងវា",
+      "example-info": "ស្វែងយល់បន្ថែម",
+
+      "example-info-title": "អំពីឧទាហរណ៍នេះ",
+      "example-info-ok": "យល់ព្រម",
+
+      "example-info-render-title-today": "របៀបដែលឧបករណ៍បង្ហាញកំហុសរបស់​ encoding",
+      "example-info-today-text": `
+      នេះជាលទ្ធផលនៃការសរសេរដោយប្រើប្រាស់ក្តារចុច និងពុម្ពអក្សរបច្ចុប្បន្ន។ កំហុសនៃ encoding 
+      អាចឬមិនអាចមើលឃើញបាន គឺអាស្រ័យលើឧបករណ៍របស់អ្នក។
+      `,
+      "example-info-render-title-future": "របៀបនៃការបង្ហាញរបស់ Khmer Encoding Structure",
+      "example-info-future-text": `
+        នេះជាលទ្ធផលនៃការសរសេរដោយប្រើក្តារចុចបច្ចុប្បន្ន ជាមួយនឹងពុម្ពអក្សរ Busra។ កំហុសនៃ encoding 
+        នឹងបង្ហាញច្បាស់លាស់ជាមួយនឹងរង្វង់មូលចុចៗ។ 
+      `,
+
 
       ...kmExampleTranslations,
     }
