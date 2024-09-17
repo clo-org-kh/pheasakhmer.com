@@ -74,8 +74,10 @@ function addInfoButton(example, alt, keysHTML) {
   btnInfo.addEventListener('click', function() {
     // Show the info popup
     let exampleInfoModal = new bootstrap.Modal(document.getElementById('example-info-modal'));
+    const desc = translate(`example-${example.id}`, {interpolation:{escapeValue: false}});
     document.getElementById('example-info-keys').innerHTML = keysHTML;
-    document.getElementById('example-info-title').innerHTML = example.text + ', ' + translate(`example-${example.id}`, {interpolation:{escapeValue: false}});
+    document.getElementById('example-info-title').innerHTML =
+      example.text + (desc ? (', ' + desc) : '');
     document.getElementById('example-info-content').innerHTML = translate(`example-${example.id}-alt-${alt.id}`, {interpolation:{escapeValue: false}});
 
     // hide the render for the default example, because it's "correct" already
@@ -116,7 +118,8 @@ function showExample(index) {
 
   document.getElementById('examples-body').innerHTML = '';
   document.getElementById('examples-tabs').innerHTML = '';
-  document.getElementById('selected-example').innerHTML = example.text + ', ' + example.description;
+  document.getElementById('selected-example').innerHTML = example.text +
+    (example.description ? (', ' + example.description) : '');
 
   // Add table of examples
 
