@@ -5,6 +5,7 @@
 
 @font-face {
   font-family: 'khmer_busra_test';
+  unicode-range: U+1780-17FF, U+25CC;
   src: url(Busra-Regular.ttf);
   src: url(Busra-Regular.woff2) format(woff2),
        url(Busra-Regular.woff) format(woff),

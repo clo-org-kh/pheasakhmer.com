@@ -386,7 +386,7 @@ __disabled__ #toast-container {
 }
 
 * {
-  font-family: var(--bs-body-font-family), khmer_busra_test;
+  font-family: khmer_busra_test, var(--bs-body-font-family);
 }
 
 #ta1 {
@@ -471,7 +471,7 @@ nav > div {
 
 #examples kbd,
 #example-info-keys kbd {
-  font-family: var(--bs-body-font-family), khmer_busra_test;
+  font-family: khmer_busra_test, var(--bs-body-font-family);
   background-color: #CCCFCF;
   color: black;
   min-width: 32px;
