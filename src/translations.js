@@ -210,8 +210,8 @@ export const resources = {
       // Various
 
       "text-placeholder": "③ សូមសរសេរនៅទីនេះ",
-      "encoding-result-correct": "✅ អក្សរសរសេរបានត្រឹមត្រូវ",
-      "encoding-result-incorrect": "❌ អក្សរសរសេរមិនបានត្រឹមត្រូវ ",
+      "encoding-result-correct": "✅ អក្សរ encoded បានត្រឹមត្រូវ",
+      "encoding-result-incorrect": "❌ អក្សរ encoded មិនបានត្រឹមត្រូវ ",
 
       // Help / Welcome dialog
 
