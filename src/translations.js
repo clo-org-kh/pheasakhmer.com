@@ -18,8 +18,8 @@ export const resources = {
 
       // Nav
 
-      "nav-system-caption": "Choose Khmer system:",
-      "nav-example-caption": "Choose example:",
+      "nav-system-caption": "Khmer system:",
+      "nav-example-caption": "Example:",
       "nav-device": "Device",
       "nav-device-desktop": "Desktop Browsers",
       "nav-device-phone": "Phone Devices",
@@ -226,7 +226,7 @@ export const resources = {
         </p>
 
         <p>
-          មុននឹងធ្វើការចាប់ផ្តើម អ្នកអាចចូលទៅមើលឧទាហរណ៍ពាក្យខ្មែរពិបាកៗមួយចំនួន។ 
+          មុននឹងធ្វើការចាប់ផ្តើម អ្នកអាចចូលទៅមើលឧទាហរណ៍ពាក្យខ្មែរពិបាកៗមួយចំនួន។
           យើងបានយកឧទាហរណ៍នោះទៅប្រៀបធៀបលើក្តារចុចបច្ចុប្បន្ន NiDA ដែលប្រើប្រាស់ស្តង់ដារខ្មែរយូនីកូដ និង
           ក្តារចុចខ្មែរអង្គរដែលពឹងផ្អែកលើបច្ចេកទេសថ្មីគឺ Khmer Encoding Structure។
         </p>
@@ -247,13 +247,13 @@ export const resources = {
         </ol>
 
         <p>
-          តើអ្នកដឹងពីរបៀបសរសេរអក្សរខ្មែរអោយត្រឹមត្រូវនៅលើក្តារចុច NiDA ឬទេ? 
+          តើអ្នកដឹងពីរបៀបសរសេរអក្សរខ្មែរអោយត្រឹមត្រូវនៅលើក្តារចុច NiDA ឬទេ?
           ចុចលើប៊ូតុង ​<b><span class="bi-question-octagon"></span> ស្វែងយល់បន្ថែម</b>
           ដើម្បីអានការពន្យល់លម្អិត។
         </p>
 
         <p>
-          ជាមួយនឹងក្តារចុចខ្មែរអង្គរដែលប្រើប្រាស់ Khmer Encoding Structure 
+          ជាមួយនឹងក្តារចុចខ្មែរអង្គរដែលប្រើប្រាស់ Khmer Encoding Structure
           ការសសេរគ្រប់ទម្រង់ទាំងអស់នឹងដំណើរការ។ អ្នកលែងត្រូវការចាំរបៀបសរសេរទៀតហើយ​។
           សាកល្បងឥឡូវនេះ!
         </p>
@@ -333,7 +333,7 @@ export const resources = {
       "menu-help": "ជំនួយក្នុងការប្រើប្រាស់គេហទំព័រ",
       "menu-about": "អំពីគេហទំព័រនេះ",
 
-      
+
       // Examples
 
       "example-try-it": "សាកល្បងវា",
@@ -344,13 +344,13 @@ export const resources = {
 
       "example-info-render-title-today": "របៀបដែលឧបករណ៍បង្ហាញកំហុសរបស់​ encoding",
       "example-info-today-text": `
-      នេះជាលទ្ធផលនៃការសរសេរដោយប្រើប្រាស់ក្តារចុច និងពុម្ពអក្សរបច្ចុប្បន្ន។ កំហុសនៃ encoding 
+      នេះជាលទ្ធផលនៃការសរសេរដោយប្រើប្រាស់ក្តារចុច និងពុម្ពអក្សរបច្ចុប្បន្ន។ កំហុសនៃ encoding
       អាចឬមិនអាចមើលឃើញបាន គឺអាស្រ័យលើឧបករណ៍របស់អ្នក។
       `,
       "example-info-render-title-future": "របៀបនៃការបង្ហាញរបស់ Khmer Encoding Structure",
       "example-info-future-text": `
-        នេះជាលទ្ធផលនៃការសរសេរដោយប្រើក្តារចុចបច្ចុប្បន្ន ជាមួយនឹងពុម្ពអក្សរ Busra។ កំហុសនៃ encoding 
-        នឹងបង្ហាញច្បាស់លាស់ជាមួយនឹងរង្វង់មូលចុចៗ។ 
+        នេះជាលទ្ធផលនៃការសរសេរដោយប្រើក្តារចុចបច្ចុប្បន្ន ជាមួយនឹងពុម្ពអក្សរ Busra។ កំហុសនៃ encoding
+        នឹងបង្ហាញច្បាស់លាស់ជាមួយនឹងរង្វង់មូលចុចៗ។
       `,
 
 

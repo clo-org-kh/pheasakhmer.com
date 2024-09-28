@@ -125,6 +125,19 @@ function showExample(index) {
 
   const active_key = getActiveKeyboardAndForm();
 
+  const examplesBody = document.getElementById('examples-body');
+
+  const examplesList = document.createElement('div');
+  examplesList.className = 'align-self-stretch';
+  examplesList.id = 'examples-list';
+  examplesBody.appendChild(examplesList);
+
+  const sampleText = document.createElement('div');
+  sampleText.className = 'align-self-stretch';
+  sampleText.id = 'sample-text';
+  sampleText.innerText = example.text;
+  examplesBody.appendChild(sampleText);
+
   let n = 1;
   for(let alt of example.alternates) {
     const active_example = alt[active_key] ?? alt.keys_nida;
@@ -148,7 +161,7 @@ function showExample(index) {
     colKeys.appendChild(buttons);
     row.appendChild(colKeys);
 
-    document.getElementById('examples-body').appendChild(row);
+    examplesList.appendChild(row);
 
     // Add tab
 
