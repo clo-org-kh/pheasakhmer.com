@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+
+    <!-- Set the viewport width to match iOS device widths -->
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>detachFromControl</title>
+
+    <!-- <script src='https://s.keyman.com/kmw/engine/16.0.142/keymanweb.js'></script>
+    <script src='https://s.keyman.com/kmw/engine/16.0.142/kmwuitoggle.js'></script> -->
+    <script src='https://s.keyman.com/kmw/engine/17.0.213/keymanweb.js'></script>
+    <script src='https://s.keyman.com/kmw/engine/17.0.213/kmwuitoggle.js'></script>
+    <script>
+      (function(kmw) {
+        kmw.init({attachType:'manual'});
+        kmw.addKeyboards('@en'); // Loads default English keyboard from Keyman Cloud (CDN)
+        kmw.addKeyboards('@th'); // Loads default Thai keyboard from Keyman Cloud (CDN)
+      })(keyman);
+    </script>
+
+  </head>
+
+<body>
+
+  <textarea id="ta1" style="width:80%; height: 200px"></textarea>
+  <br>
+  <button id="attach">Attach</button>
+  <button id="detach">Detach</button>
+
+  <script>
+    const ta1 = document.getElementById('ta1');
+    document.getElementById('attach').addEventListener('click',() => {
+      keyman.attachToControl(ta1);
+      ta1.focus();
+    });
+    document.getElementById('detach').addEventListener('click',() => {
+      keyman.detachFromControl(ta1);
+      ta1.focus();
+    });
+
+  </script>
+</body>
+</html>

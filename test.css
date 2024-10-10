@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 body {
@@ -91,7 +91,7 @@ h2 {
 .test {
   font-size: 1.5em;
   background-color: #ffffee;
-  height:100px;
+  height:60px;
   width:100%;
   min-height:30px;
 }
@@ -120,8 +120,26 @@ h2 {
 
 /** Mobile, Tablet **/
 
-.touch-device #dropdown-device {
-  display: none;
+#kmw-popup-shim {
+  opacity: 0 !important;
+}
+
+.step-title {
+  padding-top: 2px;
+  padding-right: 8px;
+}
+
+.desktop-device nav > div {
+  width: auto;
+}
+
+.touch-device #dropdown-menu-host {
+  margin-top: -70px;
+}
+
+.touch-device #dropdown-device-host,
+.touch-device #dropdown-device-host * {
+  display: none !important;
 }
 
 .touch-device #div-system-keyboard {
@@ -146,11 +164,15 @@ h2 {
   white-space: nowrap;
 }
 
+.char-grid-empty#character-grid {
+  visibility: hidden;
+}
+
 #character-grid {
   min-height: 49px;
   max-height: 200px;
   overflow-y: auto;
-  margin: 0 0 8px 0;
+  margin: 8px 0 8px 0;
   border: solid 1px #cccccc;
 }
 
@@ -312,49 +334,6 @@ h2 {
   background: #cccccc;
 }
 
-/* File drop */
-
-#drop-area {
-  border: 2px dashed #ffffff00;
-  border-radius: 20px;
-  position: relative;
-}
-
-#drop-area.highlight {
-  border: 2px dashed #ccc;
-}
-
-#drop-file,
-#drop-button {
-  display: none;
-}
-
-#drop-area.highlight {
-  border-color: black;
-}
-
-#drop-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffffc0;
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-upload' viewBox='0 0 16 16'><path d='M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z'/><path d='M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z'/></svg>");
-  background-position: center;
-  background-size: 2in;
-  background-repeat: no-repeat;
-}
-
-#drop-area.highlight #drop-image {
-  display: block;
-}
-
-#keyman-developer-logo {
-  width: 30px;
-}
-
 #btn-menu {
   padding: 2px;
 }
@@ -378,8 +357,92 @@ __disabled__ #toast-container {
 
 /* Examples */
 
-#dropdown-menu-keyboards {
-  display: none !important;
+#sample-text {
+  font-size: 4em;
+  white-space: nowrap;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 0.2em;
+}
+
+.touch-device #sample-text {
+  display: none;
+}
+
+#example-info-table td {
+  padding: 4px;
+}
+
+#example-info-today,
+#example-info-future {
+  font-size: 2em;
+  vertical-align: top;
+}
+
+#example-info-today {
+  font-family: "Noto Sans Khmer";
+}
+
+.example-buttons button {
+  margin: 0 0 0 8px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.touch-device .example-buttons {
+  display: block;
+}
+
+.touch-device .example-buttons button {
+  margin: 8px 8px 0 0;
+}
+
+* {
+  font-family: khmer_busra_test, var(--bs-body-font-family);
+}
+
+#ta1 {
+  border: solid 1px black;
+  outline: none;
+}
+
+.good #ta1,
+.good #character-grid {
+  background: rgb(192,255,192);
+  color: green;
+  border: solid 1px green;
+}
+
+.error #ta1,
+.error #character-grid {
+  background: rgb(255,192,192);
+  border: solid 1px red;
+  color: red;
+}
+
+#encoding-result {
+  min-height: 1.5em;
+}
+
+#encoding-result-correct,
+#encoding-result-incorrect {
+  display: none;
+}
+
+.error #encoding-result-correct,
+.good #encoding-result-incorrect {
+  display: none;
+}
+
+.error #encoding-result-incorrect,
+.good #encoding-result-correct {
+  display: block;
+}
+
+#examples-body .row {
+  margin-bottom: 4px;
 }
 
 @media (max-width: 767px) {
@@ -389,10 +452,8 @@ __disabled__ #toast-container {
 
   #ta1 {
     height: 55px;
-  }
-
-  #dropdown-menu-keyboards {
-    display: inline-flex !important;
+    border: solid 1px black;
+    outline: none;
   }
 
   #buttons-keyboards {
@@ -413,12 +474,26 @@ __disabled__ #toast-container {
 
 }
 
-#examples .correct kbd {
-  background-color: green;
+nav > div {
+  padding: 2px 8px;
 }
 
-#examples kbd {
-  background-color: darkred;
+#examples span.animated-active kbd {
+  background: green;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#examples kbd,
+#example-info-keys kbd {
+  font-family: khmer_busra_test, var(--bs-body-font-family);
+  background-color: #CCCFCF;
+  color: black;
+  min-width: 32px;
+  text-align: center;
+  padding-top: .4rem;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 4px;
 }
 
 .example-text {
@@ -428,6 +503,14 @@ __disabled__ #toast-container {
 #help-modal .modal-body {
   max-height: 600px;
   overflow: scroll;
+}
+
+.kes-logo {
+  text-align: center;
+}
+
+.kes-logo img {
+  width: 30%;
 }
 
 #example-tab-0 {
