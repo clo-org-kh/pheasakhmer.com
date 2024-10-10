@@ -50,6 +50,10 @@ export const resources = {
         </p>
 
         <p>
+          &rArr; <a href="#" target="_blank">Watch the video</a>
+        </p>
+
+        <p>
           To get you started, this site has some examples of common
           Khmer words that have ambiguous or difficult keying orders. We compare
           today's technology stack (Khmer Unicode standard) and how it will be
@@ -160,6 +164,8 @@ export const resources = {
       // Hamburger menu
 
       "menu-install-keyboard": "Install Khmer Angkor keyboard",
+      "menu-video": "Watch the video",
+      "menu-normalizer": "Khmer Normalizer tool",
       "menu-help": "Help using this website",
       "menu-about": "About this website",
 
@@ -223,6 +229,10 @@ export const resources = {
           គេហទំព័រនេះបង្ហាញពីការធ្វើបច្ចុប្បន្នភាពរបស់
           <a href="https://www.idri.edu.kh/research/khmer-encoding-structure/" target="_blank">Khmer Encoding Structure</a>,
           ដោយប្រើក្តារចុចខ្មែរអង្គរ និងពុម្ពអក្សរ Busra ។
+        </p>
+
+        <p>
+          &rArr; <a href="#" target="_blank">មើលវីដេអូអំពីបញ្ហានិងដំណោះស្រាយ</a>
         </p>
 
         <p>
@@ -329,7 +339,9 @@ export const resources = {
 
       // Hamburger menu
 
-      "menu-install-keyboard": "ដំឡើងក្តារចុចខ្មែរអង្គរ",
+      "menu-install-keyboard": "ដំឡើងក្តារចុច Khmer Angkor",
+      "menu-video": "មើលវីដេអូអំពីបញ្ហានិងដំណោះស្រាយ",
+      "menu-normalizer": "ឧបករណ៍ Khmer Normalizer",
       "menu-help": "ជំនួយក្នុងការប្រើប្រាស់គេហទំព័រ",
       "menu-about": "អំពីគេហទំព័រនេះ",
 

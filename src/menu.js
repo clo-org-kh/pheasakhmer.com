@@ -23,9 +23,12 @@ menuDropdown.onclick = (value) => {
 function fillDropdownMenu(t) {
   menuDropdown.removeAll();
   menuDropdown.add('#install-keyboard', t('menu-install-keyboard'));
+  menuDropdown.add('#menu-normalizer', t('menu-normalizer'));
   menuDropdown.addDivider();
   menuDropdown.add('#menu-khmer', 'ភាសាខ្មែរ'); // Do not localize
   menuDropdown.add('#menu-english', 'English'); // Do not localize
+  menuDropdown.addDivider();
+  menuDropdown.add('#menu-video', t('menu-video'));
   menuDropdown.addDivider();
   menuDropdown.add('#help', t('menu-help'));
   menuDropdown.add('#about', t('menu-about'));
