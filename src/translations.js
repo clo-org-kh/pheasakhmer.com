@@ -200,18 +200,18 @@ export const resources = {
 
       // Nav
 
-      "nav-system-caption": "ជ្រើសរើសប្រព័ន្ធក្តារចុច:",
-      "nav-example-caption": "ជ្រើសរើសឧទាហរណ៍:",
+      "nav-system-caption": "ជ្រើសរើសប្រព័ន្ធក្តារចុច៖",
+      "nav-example-caption": "ជ្រើសរើសឧទាហរណ៍៖",
       "nav-device": "ឧបករណ៍",
       "nav-device-desktop": "ប្រព័ន្ធប្រតិបត្តិការរបស់កុំព្យូទ័រ",
-      "nav-device-phone": "ឧបករណ៍ទូរស័ព្ទ",
+      "nav-device-phone": "ឧបករណ៍ចល័ត",
 
       // Systems
 
       "system-today": "បច្ចុប្បន្នភាព",
-      "system-today-long": "បច្ចុប្បន្នភាព: ខ្មែរយូនីកូដ",
+      "system-today-long": "បច្ចុប្បន្នភាព៖ ខ្មែរយូនីកូដ",
       "system-future": "អនាគតកាល",
-      "system-future-long": "អនាគតកាល: Khmer Encoding Structure",
+      "system-future-long": "អនាគតកាល៖ Khmer Encoding Structure",
 
       // Various
 
