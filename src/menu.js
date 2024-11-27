@@ -7,6 +7,8 @@ const menuDropdown = new DropdownMenu('menu');
 menuDropdown.onclick = (value) => {
   if(value == '#install-keyboard') {
     location.href = 'https://keyman.com/keyboards/khmer_angkor';
+  } else if(value == '#menu-normalizer') {
+    location.href = 'https://normalize.xn--j2e7beiw1lb2hqg.com/';
   } else if(value == '#about') {
     let aboutModal = new bootstrap.Modal(document.getElementById('about-modal'));
     aboutModal.show();
