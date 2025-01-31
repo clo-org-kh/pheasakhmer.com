@@ -100,12 +100,18 @@ function getActiveKeyboardAndForm() {
     if(!isTouchDevice() && (currentDevice == 'Windows' || currentDevice == 'macOS' || currentDevice == 'Linux')) {
       return 'keys_nida_desktop';
     }
+    if(isTablet()) {
+      return 'keys_nida_tablet';
+    }
     return 'keys_nida';
   }
 
   if(keyman.getActiveKeyboard() == 'Keyboard_khmer_angkor') {
     if(!isTouchDevice() && (currentDevice == 'Windows' || currentDevice == 'macOS' || currentDevice == 'Linux')) {
       return 'keys_angkor_desktop';
+    }
+    if(isTablet()) {
+      return 'keys_angkor_tablet';
     }
     return 'keys_angkor_mobile';
   }
