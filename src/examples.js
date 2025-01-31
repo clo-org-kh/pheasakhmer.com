@@ -42,6 +42,20 @@ export const examples = [
           { cap: 'ែ', key: ['popup', 'popup-default-K_E+shift'] },
           { cap: 'រ', key: 'default-K_R' }
         ],
+        keys_nida_tablet: [
+          { cap: 'ខ', key: 'default-K_X' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ម', key: 'default-K_M' },
+          { cap: ['Shift', 'ែ'], key: ['shift', 'shift-K_E'] },
+          { cap: 'រ', key: 'default-K_R' },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ខ', key: 'default-K_X' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ម', key: 'default-K_M' },
+          { cap: ['Shift', 'ែ'], key: ['shift', 'shift-K_E'] },
+          { cap: 'រ', key: 'default-K_R' },
+        ],
       },
       {
         id: 2,
@@ -106,6 +120,20 @@ export const examples = [
           { cap: '្ម', key: ['popup', 'popup-default-T_17D2_1798'] },
           { cap: 'រ', key: 'default-K_R' }
         ],
+        keys_nida_tablet: [
+          { cap: 'ខ', key: 'default-K_X' },
+          { cap: ['Shift', 'ែ'], key: ['shift', 'shift-K_E'] },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ម', key: 'default-K_M' },
+          { cap: 'រ', key: 'default-K_R' }
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ខ', key: 'default-K_X' },
+          { cap: ['Shift', 'ែ'], key: ['shift', 'shift-K_E'] },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ម', key: 'default-K_M' },
+          { cap: 'រ', key: 'default-K_R' }
+        ],
       },
     ]
   },
@@ -149,6 +177,22 @@ export const examples = [
           { cap: '្រ', key: ['popup', 'popup-default-T_17D2_179A'] },
           { cap: 'ិ', key: ['longpress', 'default-K_I'], longpress: true },
           { cap: 'ី', key: ['popup', 'popup-default-K_I+shift'] },
+        ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ត', key: 'default-K_T' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] }
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ត', key: 'default-K_T' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] }
         ],
       },
       {
@@ -201,6 +245,22 @@ export const examples = [
           { cap: '្ត', key: ['popup', 'popup-default-T_17D2_178F'] },
           { cap: 'ិ', key: ['longpress', 'default-K_I'], longpress: true },
           { cap: 'ី', key: ['popup', 'popup-default-K_I+shift'] },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ត', key: 'default-K_T' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I']},
+        ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ត', key: 'default-K_T' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I']},
         ],
       },
       {
@@ -262,6 +322,22 @@ export const examples = [
           { cap: '្រ', key: ['popup', 'popup-default-T_17D2_179A'] },
           { cap: 'ិ', key: ['longpress', 'default-K_I'], longpress: true },
           { cap: 'ី', key: ['popup', 'popup-default-K_I+shift'] },
+        ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ដ', key: 'default-K_D' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] }
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ដ', key: 'default-K_D' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] }
         ],
       },
       {
@@ -345,6 +421,22 @@ export const examples = [
           { cap: 'ិ', key: ['longpress', 'default-K_I'], longpress: true },
           { cap: 'ី', key: ['popup', 'popup-default-K_I+shift'] },
         ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ដ', key: 'default-K_D' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] }
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ដ', key: 'default-K_D' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] }
+        ],
       },
       {
         id: 5,
@@ -420,6 +512,22 @@ export const examples = [
           { cap: '្រ', key: ['popup', 'popup-default-T_17D2_179A'] },
           { cap: 'ត', key: ['longpress', 'default-K_T'], longpress: true },
           { cap: '្ត', key: ['popup', 'popup-default-T_17D2_178F'] },
+        ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ត', key: 'default-K_T' },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ត', key: 'default-K_T' },
         ],
       },
       {
@@ -517,6 +625,22 @@ export const examples = [
           { cap: 'ដ', key: ['longpress', 'default-K_D'], longpress: true },
           { cap: '្ដ', key: ['popup', 'popup-default-T_17D2_178A'] },
         ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ដ', key: 'default-K_D' },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'រ', key: 'default-K_R' },
+          { cap: '្', key: 'default-K_J' },
+          { cap: 'ដ', key: 'default-K_D' },
+        ],
       },
     ]
   },
@@ -553,6 +677,18 @@ export const examples = [
           { cap: 'ស', key: 'default-K_S' },
           { cap: '់', key: ['longpress', 'default-K_QUOTE'], longpress: true },
           { cap: '៊', key: ['popup', 'popup-default-K_SLASH'] },
+          { cap: 'ើ', key: 'default-K_COLON' },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '៊', key: 'default-K_SLASH' },
+          { cap: 'ើ', key: 'default-K_COLON' },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '៊', key: 'default-K_SLASH' },
           { cap: 'ើ', key: 'default-K_COLON' },
           { cap: 'ប', key: 'default-K_B' },
         ],
@@ -628,6 +764,18 @@ export const examples = [
           { cap: 'ើ', key: 'default-K_COLON' },
           { cap: 'ប', key: 'default-K_B' },
         ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '៉', key: 'default-K_QUOTE+shift' },
+          { cap: 'ើ', key: 'default-K_COLON' },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: ['Shift', '៉'], key: ['shift', 'shift-K_QUOTE'] },
+          { cap: 'ើ', key: 'default-K_COLON' },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
       },
 
       {
@@ -677,6 +825,20 @@ export const examples = [
           { cap: 'ី', key: ['popup', 'popup-default-K_I+shift'] },
           { cap: 'ប', key: 'default-K_B' },
         ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '៊', key: 'default-K_SLASH' },
+          { cap: 'េ', key: 'default-K_E' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: '៊', key: 'default-K_SLASH' },
+          { cap: 'េ', key: 'default-K_E' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
       },
 
       {
@@ -720,6 +882,18 @@ export const examples = [
           { cap: 'ប', key: 'default-K_B' },
         ],
         keys_angkor_mobile: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: 'ុ', key: 'default-K_U' },
+          { cap: 'ើ', key: 'default-K_COLON' },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: 'ុ', key: 'default-K_U' },
+          { cap: 'ើ', key: 'default-K_COLON' },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
+        keys_angkor_tablet: [
           { cap: 'ស', key: 'default-K_S' },
           { cap: 'ុ', key: 'default-K_U' },
           { cap: 'ើ', key: 'default-K_COLON' },
@@ -798,6 +972,20 @@ export const examples = [
           { cap: 'ុ', key: 'default-K_U' },
           { cap: 'ប', key: 'default-K_B' },
         ],
+        keys_nida_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: 'េ', key: 'default-K_E' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: 'ុ', key: 'default-K_U' },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ស', key: 'default-K_S' },
+          { cap: 'េ', key: 'default-K_E' },
+          { cap: ['Shift', 'ី'], key: ['shift', 'shift-K_I'] },
+          { cap: 'ុ', key: 'default-K_U' },
+          { cap: 'ប', key: 'default-K_B' },
+        ],
       },
     ]
   },
@@ -861,6 +1049,16 @@ export const examples = [
           { cap: '៉', key: ['popup', 'popup-default-K_QUOTE+shift'] },
           { cap: 'ា', key: ['longpress', 'default-K_A'], longpress: true },
           { cap: 'ាំ', key: ['popup', 'popup-default-K_A+shift'] },
+        ],
+        keys_nida_tablet: [
+          { cap: ['Shift','ញ'], key: ['shift', 'shift-K_J'] },
+          { cap: '៉', key: 'default-K_QUOTE+shift' },
+          { cap: ['Shift','ាំ'], key: ['shift', 'shift-K_A'] },
+        ],
+        keys_angkor_tablet: [
+          { cap: ['Shift','ញ'], key: ['shift', 'shift-K_J'] },
+          { cap: ['Shift','៉'], key: ['shift', 'shift-K_QUOTE'] },
+          { cap: ['Shift','ាំ'], key: ['shift', 'shift-K_A'] },
         ],
       },
 
@@ -968,9 +1166,20 @@ export const examples = [
         keys_angkor_mobile: [
           { cap: 'ញ', key: 'default-K_J+shift' },
           { cap: 'ុ', key: 'default-K_U' },
-
           { cap: 'ម', key: ['longpress', 'default-K_M'], longpress: true },
           { cap: 'ំ', key: ['popup', 'popup-default-K_M+shift'] },
+          { cap: 'ា', key: 'default-K_A' },
+        ],
+        keys_nida_tablet: [
+          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
+          { cap: 'ុ', key: 'default-K_U' },
+          { cap: ['Shift', 'ំ'], key: ['shift', 'shift-K_M'] },
+          { cap: 'ា', key: 'default-K_A' },
+        ],
+        keys_angkor_tablet: [
+          { cap: 'ញ', key: ['shift', 'shift-K_J'] },
+          { cap: 'ុ', key: 'default-K_U' },
+          { cap: ['Shift', 'ំ'], key: ['shift', 'shift-K_M'] },
           { cap: 'ា', key: 'default-K_A' },
         ],
       },
