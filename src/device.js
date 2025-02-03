@@ -45,3 +45,7 @@ function loadDevices() {
 export function isTouchDevice() {
   return keyman.util.isTouchDevice();
 }
+
+export function isTablet() {
+  return keyman.util?.config?.hostDevice?.formFactor == 'tablet';
+}

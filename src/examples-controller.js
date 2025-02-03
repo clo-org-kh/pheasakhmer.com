@@ -4,7 +4,7 @@ import { register, translate } from './i18n.js';
 import { animateKeystrokes } from './animate.js';
 import { DropdownMenu } from './dropdown-menu.js';
 import { focusTextArea } from './text-area.js';
-import { isTouchDevice, currentDevice } from './device.js';
+import { isTouchDevice, isTablet, currentDevice } from './device.js';
 import { examples } from './examples.js';
 
 const examplesDropdown = new DropdownMenu('examples');
